@@ -136,7 +136,6 @@ gdjs.copyArray(runtimeScene.getObjects("ScoreBlueTxt"), gdjs.MatchSwipeCode.GDSc
 {for(var i = 0, len = gdjs.MatchSwipeCode.GDScoreBlueTxtObjects1.length ;i < len;++i) {
     gdjs.MatchSwipeCode.GDScoreBlueTxtObjects1[i].setX(576 - ((gdjs.MatchSwipeCode.GDScoreBlueTxtObjects1[i].getWidth()) / 2));
 }
-}{gdjs.deviceVibration.startVibration(1000000);
 }}
 
 }
@@ -1234,6 +1233,7 @@ if (gdjs.MatchSwipeCode.condition1IsTrue_0.val) {
 }{runtimeScene.getGame().getVariables().getFromIndex(7).setNumber(0);
 }{runtimeScene.getGame().getVariables().getFromIndex(9).setNumber(0);
 }{runtimeScene.getGame().getVariables().getFromIndex(10).setNumber(0);
+}{gdjs.deviceVibration.startVibration(500);
 }}
 
 }
