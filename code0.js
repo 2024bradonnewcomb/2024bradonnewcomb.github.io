@@ -1238,7 +1238,7 @@ if (gdjs.MatchSwipeCode.condition1IsTrue_0.val) {
 }{runtimeScene.getGame().getVariables().getFromIndex(7).setNumber(0);
 }{runtimeScene.getGame().getVariables().getFromIndex(9).setNumber(0);
 }{runtimeScene.getGame().getVariables().getFromIndex(10).setNumber(0);
-}{gdjs.deviceVibration.startVibration(3);
+}{gdjs.deviceVibration.startVibration(5);
 }}
 
 }
