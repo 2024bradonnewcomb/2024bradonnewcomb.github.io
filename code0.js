@@ -1475,6 +1475,7 @@ gdjs.MatchSwipeCode.condition1IsTrue_0.val = gdjs.evtTools.input.isMouseButtonRe
 }}
 if (gdjs.MatchSwipeCode.condition1IsTrue_0.val) {
 {gdjs.deviceVibration.startVibration(1);
+}{runtimeScene.getGame().getVariables().getFromIndex(19).setNumber(1);
 }}
 
 }
