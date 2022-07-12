@@ -508,18 +508,6 @@ gdjs.copyArray(runtimeScene.getObjects("LR"), gdjs.MatchSwipeCode.GDLRObjects1);
 {
 
 
-{
-gdjs.copyArray(runtimeScene.getObjects("DiscBlueHigh"), gdjs.MatchSwipeCode.GDDiscBlueHighObjects2);
-gdjs.copyArray(runtimeScene.getObjects("DiscBlueHighSwipe"), gdjs.MatchSwipeCode.GDDiscBlueHighSwipeObjects2);
-{runtimeScene.getGame().getVariables().getFromIndex(5).setNumber(Math.round((((( gdjs.MatchSwipeCode.GDDiscBlueHighSwipeObjects2.length === 0 ) ? 0 :gdjs.MatchSwipeCode.GDDiscBlueHighSwipeObjects2[0].getPointX("")) - (( gdjs.MatchSwipeCode.GDDiscBlueHighObjects2.length === 0 ) ? 0 :gdjs.MatchSwipeCode.GDDiscBlueHighObjects2[0].getPointX(""))) / gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(28)))) + gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(6)));
-}}
-
-}
-
-
-{
-
-
 gdjs.MatchSwipeCode.condition0IsTrue_0.val = false;
 {
 gdjs.MatchSwipeCode.condition0IsTrue_0.val = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(5)) != gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(7));
