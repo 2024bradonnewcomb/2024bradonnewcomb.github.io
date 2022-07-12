@@ -104,6 +104,9 @@ gdjs.MatchSwipeCode.GDRBObjects3= [];
 gdjs.MatchSwipeCode.GDAutonSelectorObjects1= [];
 gdjs.MatchSwipeCode.GDAutonSelectorObjects2= [];
 gdjs.MatchSwipeCode.GDAutonSelectorObjects3= [];
+gdjs.MatchSwipeCode.GDArrowObjects1= [];
+gdjs.MatchSwipeCode.GDArrowObjects2= [];
+gdjs.MatchSwipeCode.GDArrowObjects3= [];
 
 gdjs.MatchSwipeCode.conditionTrue_0 = {val:false};
 gdjs.MatchSwipeCode.condition0IsTrue_0 = {val:false};
@@ -1926,6 +1929,9 @@ gdjs.MatchSwipeCode.GDRBObjects3.length = 0;
 gdjs.MatchSwipeCode.GDAutonSelectorObjects1.length = 0;
 gdjs.MatchSwipeCode.GDAutonSelectorObjects2.length = 0;
 gdjs.MatchSwipeCode.GDAutonSelectorObjects3.length = 0;
+gdjs.MatchSwipeCode.GDArrowObjects1.length = 0;
+gdjs.MatchSwipeCode.GDArrowObjects2.length = 0;
+gdjs.MatchSwipeCode.GDArrowObjects3.length = 0;
 
 gdjs.MatchSwipeCode.eventsList11(runtimeScene);
 return;
