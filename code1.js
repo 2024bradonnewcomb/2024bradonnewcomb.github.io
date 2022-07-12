@@ -1658,12 +1658,19 @@ if (gdjs.MatchSwipeCode.condition1IsTrue_0.val) {
 {runtimeScene.getGame().getVariables().getFromIndex(2).setNumber(0);
 }{runtimeScene.getGame().getVariables().getFromIndex(3).setNumber(0);
 }{runtimeScene.getGame().getVariables().getFromIndex(8).setNumber(0);
+}{runtimeScene.getGame().getVariables().getFromIndex(9).setNumber(0);
 }{runtimeScene.getGame().getVariables().getFromIndex(5).setNumber(0);
+}{runtimeScene.getGame().getVariables().getFromIndex(6).setNumber(0);
 }{runtimeScene.getGame().getVariables().getFromIndex(11).setNumber(0);
+}{runtimeScene.getGame().getVariables().getFromIndex(12).setNumber(0);
 }{runtimeScene.getGame().getVariables().getFromIndex(17).setNumber(0);
+}{runtimeScene.getGame().getVariables().getFromIndex(18).setNumber(0);
 }{runtimeScene.getGame().getVariables().getFromIndex(14).setNumber(0);
+}{runtimeScene.getGame().getVariables().getFromIndex(15).setNumber(0);
 }{runtimeScene.getGame().getVariables().getFromIndex(20).setNumber(0);
+}{runtimeScene.getGame().getVariables().getFromIndex(21).setNumber(0);
 }{runtimeScene.getGame().getVariables().getFromIndex(23).setNumber(0);
+}{runtimeScene.getGame().getVariables().getFromIndex(24).setNumber(0);
 }{gdjs.deviceVibration.startVibration(10);
 }{gdjs.evtTools.sound.playSound(runtimeScene, "Click.mp3", false, 10, 1);
 }}
