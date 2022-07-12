@@ -149,6 +149,29 @@ gdjs.copyArray(runtimeScene.getObjects("ScoreBlueTxt"), gdjs.MatchSwipeCode.GDSc
 {
 
 
+gdjs.MatchSwipeCode.condition0IsTrue_0.val = false;
+{
+gdjs.MatchSwipeCode.condition0IsTrue_0.val = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(2)) != gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(4));
+}if (gdjs.MatchSwipeCode.condition0IsTrue_0.val) {
+{gdjs.deviceVibration.startVibration(5);
+}}
+
+}
+
+
+{
+
+
+{
+{runtimeScene.getGame().getVariables().getFromIndex(4).setNumber(gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(2)));
+}}
+
+}
+
+
+{
+
+
 {
 gdjs.copyArray(runtimeScene.getObjects("DiscRedHigh"), gdjs.MatchSwipeCode.GDDiscRedHighObjects2);
 gdjs.copyArray(runtimeScene.getObjects("DiscRedHighSwipe"), gdjs.MatchSwipeCode.GDDiscRedHighSwipeObjects2);
@@ -280,34 +303,11 @@ gdjs.copyArray(runtimeScene.getObjects("HR"), gdjs.MatchSwipeCode.GDHRObjects2);
 
 
 {
-gdjs.copyArray(runtimeScene.getObjects("DiscRedHigh"), gdjs.MatchSwipeCode.GDDiscRedHighObjects2);
-gdjs.copyArray(runtimeScene.getObjects("HR"), gdjs.MatchSwipeCode.GDHRObjects2);
-{for(var i = 0, len = gdjs.MatchSwipeCode.GDHRObjects2.length ;i < len;++i) {
-    gdjs.MatchSwipeCode.GDHRObjects2[i].setX(((( gdjs.MatchSwipeCode.GDDiscRedHighObjects2.length === 0 ) ? 0 :gdjs.MatchSwipeCode.GDDiscRedHighObjects2[0].getPointX("")) + (( gdjs.MatchSwipeCode.GDDiscRedHighObjects2.length === 0 ) ? 0 :gdjs.MatchSwipeCode.GDDiscRedHighObjects2[0].getWidth()) / 2) - ((gdjs.MatchSwipeCode.GDHRObjects2[i].getWidth()) / 2));
+gdjs.copyArray(runtimeScene.getObjects("DiscRedHigh"), gdjs.MatchSwipeCode.GDDiscRedHighObjects1);
+gdjs.copyArray(runtimeScene.getObjects("HR"), gdjs.MatchSwipeCode.GDHRObjects1);
+{for(var i = 0, len = gdjs.MatchSwipeCode.GDHRObjects1.length ;i < len;++i) {
+    gdjs.MatchSwipeCode.GDHRObjects1[i].setX(((( gdjs.MatchSwipeCode.GDDiscRedHighObjects1.length === 0 ) ? 0 :gdjs.MatchSwipeCode.GDDiscRedHighObjects1[0].getPointX("")) + (( gdjs.MatchSwipeCode.GDDiscRedHighObjects1.length === 0 ) ? 0 :gdjs.MatchSwipeCode.GDDiscRedHighObjects1[0].getWidth()) / 2) - ((gdjs.MatchSwipeCode.GDHRObjects1[i].getWidth()) / 2));
 }
-}}
-
-}
-
-
-{
-
-
-gdjs.MatchSwipeCode.condition0IsTrue_0.val = false;
-{
-gdjs.MatchSwipeCode.condition0IsTrue_0.val = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(2)) != gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(4));
-}if (gdjs.MatchSwipeCode.condition0IsTrue_0.val) {
-{gdjs.deviceVibration.startVibration(5);
-}}
-
-}
-
-
-{
-
-
-{
-{runtimeScene.getGame().getVariables().getFromIndex(4).setNumber(gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(2)));
 }}
 
 }
