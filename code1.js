@@ -1559,7 +1559,7 @@ gdjs.copyArray(runtimeScene.getObjects("AutonSelector"), gdjs.MatchSwipeCode.GDA
 gdjs.MatchSwipeCode.condition0IsTrue_0.val = false;
 {
 for(var i = 0, k = 0, l = gdjs.MatchSwipeCode.GDAutonSelectorObjects2.length;i<l;++i) {
-    if ( gdjs.MatchSwipeCode.GDAutonSelectorObjects2[i].getAnimation() == 3 ) {
+    if ( gdjs.MatchSwipeCode.GDAutonSelectorObjects2[i].getAnimation() == 4 ) {
         gdjs.MatchSwipeCode.condition0IsTrue_0.val = true;
         gdjs.MatchSwipeCode.GDAutonSelectorObjects2[k] = gdjs.MatchSwipeCode.GDAutonSelectorObjects2[i];
         ++k;
@@ -1619,6 +1619,27 @@ gdjs.MatchSwipeCode.GDAutonSelectorObjects2.length = k;}if (gdjs.MatchSwipeCode.
 
 {
 
+gdjs.copyArray(runtimeScene.getObjects("AutonSelector"), gdjs.MatchSwipeCode.GDAutonSelectorObjects2);
+
+gdjs.MatchSwipeCode.condition0IsTrue_0.val = false;
+{
+for(var i = 0, k = 0, l = gdjs.MatchSwipeCode.GDAutonSelectorObjects2.length;i<l;++i) {
+    if ( gdjs.MatchSwipeCode.GDAutonSelectorObjects2[i].getAnimation() == 2 ) {
+        gdjs.MatchSwipeCode.condition0IsTrue_0.val = true;
+        gdjs.MatchSwipeCode.GDAutonSelectorObjects2[k] = gdjs.MatchSwipeCode.GDAutonSelectorObjects2[i];
+        ++k;
+    }
+}
+gdjs.MatchSwipeCode.GDAutonSelectorObjects2.length = k;}if (gdjs.MatchSwipeCode.condition0IsTrue_0.val) {
+{runtimeScene.getGame().getVariables().getFromIndex(29).setNumber(0);
+}{runtimeScene.getGame().getVariables().getFromIndex(30).setNumber(1);
+}}
+
+}
+
+
+{
+
 gdjs.copyArray(runtimeScene.getObjects("AutonSelector"), gdjs.MatchSwipeCode.GDAutonSelectorObjects1);
 
 gdjs.MatchSwipeCode.condition0IsTrue_0.val = false;
@@ -1631,8 +1652,8 @@ for(var i = 0, k = 0, l = gdjs.MatchSwipeCode.GDAutonSelectorObjects1.length;i<l
     }
 }
 gdjs.MatchSwipeCode.GDAutonSelectorObjects1.length = k;}if (gdjs.MatchSwipeCode.condition0IsTrue_0.val) {
-{runtimeScene.getGame().getVariables().getFromIndex(29).setNumber(0);
-}{runtimeScene.getGame().getVariables().getFromIndex(30).setNumber(1);
+{runtimeScene.getGame().getVariables().getFromIndex(29).setNumber(0.5);
+}{runtimeScene.getGame().getVariables().getFromIndex(30).setNumber(0.5);
 }}
 
 }
