@@ -183,7 +183,7 @@ gdjs.MatchCode.eventsList0 = function(runtimeScene) {
 {
 gdjs.copyArray(runtimeScene.getObjects("ScoreRedTxt"), gdjs.MatchCode.GDScoreRedTxtObjects2);
 {for(var i = 0, len = gdjs.MatchCode.GDScoreRedTxtObjects2.length ;i < len;++i) {
-    gdjs.MatchCode.GDScoreRedTxtObjects2[i].setString(gdjs.evtTools.common.toString((gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(2)) * 5) + (gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(6)) * 1) + (gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(11)) * 10) + (gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(12)) * 3)));
+    gdjs.MatchCode.GDScoreRedTxtObjects2[i].setString(gdjs.evtTools.common.toString((gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(2)) * 5) + (gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(8)) * 1) + (gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(17)) * 10) + (gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(20)) * 3)));
 }
 }}
 
@@ -209,7 +209,7 @@ gdjs.copyArray(runtimeScene.getObjects("ScoreRedTxt"), gdjs.MatchCode.GDScoreRed
 {
 gdjs.copyArray(runtimeScene.getObjects("ScoreBlueTxt"), gdjs.MatchCode.GDScoreBlueTxtObjects2);
 {for(var i = 0, len = gdjs.MatchCode.GDScoreBlueTxtObjects2.length ;i < len;++i) {
-    gdjs.MatchCode.GDScoreBlueTxtObjects2[i].setString(gdjs.evtTools.common.toString((gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(5)) * 5) + (gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(9)) * 1) + (gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(10)) * 10) + (gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(13)) * 3)));
+    gdjs.MatchCode.GDScoreBlueTxtObjects2[i].setString(gdjs.evtTools.common.toString((gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(5)) * 5) + (gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(11)) * 1) + (gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(14)) * 10) + (gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(23)) * 3)));
 }
 }}
 
@@ -405,7 +405,7 @@ gdjs.MatchCode.condition0IsTrue_0.val = false;
 gdjs.MatchCode.condition1IsTrue_0.val = false;
 gdjs.MatchCode.condition2IsTrue_0.val = false;
 {
-gdjs.MatchCode.condition0IsTrue_0.val = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(6)) < 60;
+gdjs.MatchCode.condition0IsTrue_0.val = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(8)) < 60;
 }if ( gdjs.MatchCode.condition0IsTrue_0.val ) {
 {
 gdjs.MatchCode.condition1IsTrue_0.val = gdjs.evtTools.input.cursorOnObject(gdjs.MatchCode.mapOfGDgdjs_46MatchCode_46GDLRPlusObjects2Objects, runtimeScene, true, false);
@@ -415,7 +415,7 @@ gdjs.MatchCode.condition2IsTrue_0.val = gdjs.evtTools.input.isMouseButtonRelease
 }}
 }
 if (gdjs.MatchCode.condition2IsTrue_0.val) {
-{runtimeScene.getGame().getVariables().getFromIndex(6).add(1);
+{runtimeScene.getGame().getVariables().getFromIndex(8).add(1);
 }}
 
 }
@@ -429,7 +429,7 @@ gdjs.MatchCode.condition0IsTrue_0.val = false;
 gdjs.MatchCode.condition1IsTrue_0.val = false;
 gdjs.MatchCode.condition2IsTrue_0.val = false;
 {
-gdjs.MatchCode.condition0IsTrue_0.val = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(6)) <= 59;
+gdjs.MatchCode.condition0IsTrue_0.val = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(8)) <= 59;
 }if ( gdjs.MatchCode.condition0IsTrue_0.val ) {
 {
 gdjs.MatchCode.condition1IsTrue_0.val = gdjs.evtTools.input.cursorOnObject(gdjs.MatchCode.mapOfGDgdjs_46MatchCode_46GDLRPlus5Objects2Objects, runtimeScene, true, false);
@@ -439,7 +439,7 @@ gdjs.MatchCode.condition2IsTrue_0.val = gdjs.evtTools.input.isMouseButtonRelease
 }}
 }
 if (gdjs.MatchCode.condition2IsTrue_0.val) {
-{runtimeScene.getGame().getVariables().getFromIndex(6).add(5);
+{runtimeScene.getGame().getVariables().getFromIndex(8).add(5);
 }}
 
 }
@@ -453,7 +453,7 @@ gdjs.MatchCode.condition0IsTrue_0.val = false;
 gdjs.MatchCode.condition1IsTrue_0.val = false;
 gdjs.MatchCode.condition2IsTrue_0.val = false;
 {
-gdjs.MatchCode.condition0IsTrue_0.val = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(6)) > 0;
+gdjs.MatchCode.condition0IsTrue_0.val = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(8)) > 0;
 }if ( gdjs.MatchCode.condition0IsTrue_0.val ) {
 {
 gdjs.MatchCode.condition1IsTrue_0.val = gdjs.evtTools.input.cursorOnObject(gdjs.MatchCode.mapOfGDgdjs_46MatchCode_46GDLRMinusObjects2Objects, runtimeScene, true, false);
@@ -463,7 +463,7 @@ gdjs.MatchCode.condition2IsTrue_0.val = gdjs.evtTools.input.isMouseButtonRelease
 }}
 }
 if (gdjs.MatchCode.condition2IsTrue_0.val) {
-{runtimeScene.getGame().getVariables().getFromIndex(6).sub(1);
+{runtimeScene.getGame().getVariables().getFromIndex(8).sub(1);
 }}
 
 }
@@ -477,7 +477,7 @@ gdjs.MatchCode.condition0IsTrue_0.val = false;
 gdjs.MatchCode.condition1IsTrue_0.val = false;
 gdjs.MatchCode.condition2IsTrue_0.val = false;
 {
-gdjs.MatchCode.condition0IsTrue_0.val = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(6)) >= 1;
+gdjs.MatchCode.condition0IsTrue_0.val = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(8)) >= 1;
 }if ( gdjs.MatchCode.condition0IsTrue_0.val ) {
 {
 gdjs.MatchCode.condition1IsTrue_0.val = gdjs.evtTools.input.cursorOnObject(gdjs.MatchCode.mapOfGDgdjs_46MatchCode_46GDLRMinus5Objects2Objects, runtimeScene, true, false);
@@ -487,7 +487,7 @@ gdjs.MatchCode.condition2IsTrue_0.val = gdjs.evtTools.input.isMouseButtonRelease
 }}
 }
 if (gdjs.MatchCode.condition2IsTrue_0.val) {
-{runtimeScene.getGame().getVariables().getFromIndex(6).sub(5);
+{runtimeScene.getGame().getVariables().getFromIndex(8).sub(5);
 }}
 
 }
@@ -498,9 +498,9 @@ if (gdjs.MatchCode.condition2IsTrue_0.val) {
 
 gdjs.MatchCode.condition0IsTrue_0.val = false;
 {
-gdjs.MatchCode.condition0IsTrue_0.val = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(6)) > 60;
+gdjs.MatchCode.condition0IsTrue_0.val = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(8)) > 60;
 }if (gdjs.MatchCode.condition0IsTrue_0.val) {
-{runtimeScene.getGame().getVariables().getFromIndex(6).setNumber(60);
+{runtimeScene.getGame().getVariables().getFromIndex(8).setNumber(60);
 }}
 
 }
@@ -511,9 +511,9 @@ gdjs.MatchCode.condition0IsTrue_0.val = gdjs.evtTools.variable.getVariableNumber
 
 gdjs.MatchCode.condition0IsTrue_0.val = false;
 {
-gdjs.MatchCode.condition0IsTrue_0.val = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(6)) < 0;
+gdjs.MatchCode.condition0IsTrue_0.val = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(8)) < 0;
 }if (gdjs.MatchCode.condition0IsTrue_0.val) {
-{runtimeScene.getGame().getVariables().getFromIndex(6).setNumber(0);
+{runtimeScene.getGame().getVariables().getFromIndex(8).setNumber(0);
 }}
 
 }
@@ -525,15 +525,15 @@ gdjs.MatchCode.condition0IsTrue_0.val = gdjs.evtTools.variable.getVariableNumber
 gdjs.MatchCode.condition0IsTrue_0.val = false;
 gdjs.MatchCode.condition1IsTrue_0.val = false;
 {
-gdjs.MatchCode.condition0IsTrue_0.val = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(6)) <= 60;
+gdjs.MatchCode.condition0IsTrue_0.val = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(8)) <= 60;
 }if ( gdjs.MatchCode.condition0IsTrue_0.val ) {
 {
-gdjs.MatchCode.condition1IsTrue_0.val = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(6)) >= 0;
+gdjs.MatchCode.condition1IsTrue_0.val = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(8)) >= 0;
 }}
 if (gdjs.MatchCode.condition1IsTrue_0.val) {
 gdjs.copyArray(runtimeScene.getObjects("LR"), gdjs.MatchCode.GDLRObjects2);
 {for(var i = 0, len = gdjs.MatchCode.GDLRObjects2.length ;i < len;++i) {
-    gdjs.MatchCode.GDLRObjects2[i].setString(gdjs.evtTools.variable.getVariableString(runtimeScene.getGame().getVariables().getFromIndex(6)));
+    gdjs.MatchCode.GDLRObjects2[i].setString(gdjs.evtTools.variable.getVariableString(runtimeScene.getGame().getVariables().getFromIndex(8)));
 }
 }}
 
@@ -729,7 +729,7 @@ gdjs.MatchCode.condition0IsTrue_0.val = false;
 gdjs.MatchCode.condition1IsTrue_0.val = false;
 gdjs.MatchCode.condition2IsTrue_0.val = false;
 {
-gdjs.MatchCode.condition0IsTrue_0.val = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(9)) < 60;
+gdjs.MatchCode.condition0IsTrue_0.val = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(11)) < 60;
 }if ( gdjs.MatchCode.condition0IsTrue_0.val ) {
 {
 gdjs.MatchCode.condition1IsTrue_0.val = gdjs.evtTools.input.cursorOnObject(gdjs.MatchCode.mapOfGDgdjs_46MatchCode_46GDLBPlusObjects2Objects, runtimeScene, true, false);
@@ -739,7 +739,7 @@ gdjs.MatchCode.condition2IsTrue_0.val = gdjs.evtTools.input.isMouseButtonRelease
 }}
 }
 if (gdjs.MatchCode.condition2IsTrue_0.val) {
-{runtimeScene.getGame().getVariables().getFromIndex(9).add(1);
+{runtimeScene.getGame().getVariables().getFromIndex(11).add(1);
 }}
 
 }
@@ -753,7 +753,7 @@ gdjs.MatchCode.condition0IsTrue_0.val = false;
 gdjs.MatchCode.condition1IsTrue_0.val = false;
 gdjs.MatchCode.condition2IsTrue_0.val = false;
 {
-gdjs.MatchCode.condition0IsTrue_0.val = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(9)) <= 59;
+gdjs.MatchCode.condition0IsTrue_0.val = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(11)) <= 59;
 }if ( gdjs.MatchCode.condition0IsTrue_0.val ) {
 {
 gdjs.MatchCode.condition1IsTrue_0.val = gdjs.evtTools.input.cursorOnObject(gdjs.MatchCode.mapOfGDgdjs_46MatchCode_46GDLBPlus5Objects2Objects, runtimeScene, true, false);
@@ -763,7 +763,7 @@ gdjs.MatchCode.condition2IsTrue_0.val = gdjs.evtTools.input.isMouseButtonRelease
 }}
 }
 if (gdjs.MatchCode.condition2IsTrue_0.val) {
-{runtimeScene.getGame().getVariables().getFromIndex(9).add(5);
+{runtimeScene.getGame().getVariables().getFromIndex(11).add(5);
 }}
 
 }
@@ -777,7 +777,7 @@ gdjs.MatchCode.condition0IsTrue_0.val = false;
 gdjs.MatchCode.condition1IsTrue_0.val = false;
 gdjs.MatchCode.condition2IsTrue_0.val = false;
 {
-gdjs.MatchCode.condition0IsTrue_0.val = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(9)) > 0;
+gdjs.MatchCode.condition0IsTrue_0.val = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(11)) > 0;
 }if ( gdjs.MatchCode.condition0IsTrue_0.val ) {
 {
 gdjs.MatchCode.condition1IsTrue_0.val = gdjs.evtTools.input.cursorOnObject(gdjs.MatchCode.mapOfGDgdjs_46MatchCode_46GDLBMinusObjects2Objects, runtimeScene, true, false);
@@ -787,7 +787,7 @@ gdjs.MatchCode.condition2IsTrue_0.val = gdjs.evtTools.input.isMouseButtonRelease
 }}
 }
 if (gdjs.MatchCode.condition2IsTrue_0.val) {
-{runtimeScene.getGame().getVariables().getFromIndex(9).sub(1);
+{runtimeScene.getGame().getVariables().getFromIndex(11).sub(1);
 }}
 
 }
@@ -801,7 +801,7 @@ gdjs.MatchCode.condition0IsTrue_0.val = false;
 gdjs.MatchCode.condition1IsTrue_0.val = false;
 gdjs.MatchCode.condition2IsTrue_0.val = false;
 {
-gdjs.MatchCode.condition0IsTrue_0.val = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(9)) >= 1;
+gdjs.MatchCode.condition0IsTrue_0.val = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(11)) >= 1;
 }if ( gdjs.MatchCode.condition0IsTrue_0.val ) {
 {
 gdjs.MatchCode.condition1IsTrue_0.val = gdjs.evtTools.input.cursorOnObject(gdjs.MatchCode.mapOfGDgdjs_46MatchCode_46GDLBMinus5Objects2Objects, runtimeScene, true, false);
@@ -811,7 +811,7 @@ gdjs.MatchCode.condition2IsTrue_0.val = gdjs.evtTools.input.isMouseButtonRelease
 }}
 }
 if (gdjs.MatchCode.condition2IsTrue_0.val) {
-{runtimeScene.getGame().getVariables().getFromIndex(9).sub(5);
+{runtimeScene.getGame().getVariables().getFromIndex(11).sub(5);
 }}
 
 }
@@ -822,9 +822,9 @@ if (gdjs.MatchCode.condition2IsTrue_0.val) {
 
 gdjs.MatchCode.condition0IsTrue_0.val = false;
 {
-gdjs.MatchCode.condition0IsTrue_0.val = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(9)) < 0;
+gdjs.MatchCode.condition0IsTrue_0.val = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(11)) < 0;
 }if (gdjs.MatchCode.condition0IsTrue_0.val) {
-{runtimeScene.getGame().getVariables().getFromIndex(9).setNumber(0);
+{runtimeScene.getGame().getVariables().getFromIndex(11).setNumber(0);
 }}
 
 }
@@ -835,9 +835,9 @@ gdjs.MatchCode.condition0IsTrue_0.val = gdjs.evtTools.variable.getVariableNumber
 
 gdjs.MatchCode.condition0IsTrue_0.val = false;
 {
-gdjs.MatchCode.condition0IsTrue_0.val = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(9)) > 60;
+gdjs.MatchCode.condition0IsTrue_0.val = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(11)) > 60;
 }if (gdjs.MatchCode.condition0IsTrue_0.val) {
-{runtimeScene.getGame().getVariables().getFromIndex(9).setNumber(60);
+{runtimeScene.getGame().getVariables().getFromIndex(11).setNumber(60);
 }}
 
 }
@@ -849,15 +849,15 @@ gdjs.MatchCode.condition0IsTrue_0.val = gdjs.evtTools.variable.getVariableNumber
 gdjs.MatchCode.condition0IsTrue_0.val = false;
 gdjs.MatchCode.condition1IsTrue_0.val = false;
 {
-gdjs.MatchCode.condition0IsTrue_0.val = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(9)) >= 0;
+gdjs.MatchCode.condition0IsTrue_0.val = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(11)) >= 0;
 }if ( gdjs.MatchCode.condition0IsTrue_0.val ) {
 {
-gdjs.MatchCode.condition1IsTrue_0.val = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(9)) <= 60;
+gdjs.MatchCode.condition1IsTrue_0.val = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(11)) <= 60;
 }}
 if (gdjs.MatchCode.condition1IsTrue_0.val) {
 gdjs.copyArray(runtimeScene.getObjects("LB"), gdjs.MatchCode.GDLBObjects2);
 {for(var i = 0, len = gdjs.MatchCode.GDLBObjects2.length ;i < len;++i) {
-    gdjs.MatchCode.GDLBObjects2[i].setString(gdjs.evtTools.variable.getVariableString(runtimeScene.getGame().getVariables().getFromIndex(9)));
+    gdjs.MatchCode.GDLBObjects2[i].setString(gdjs.evtTools.variable.getVariableString(runtimeScene.getGame().getVariables().getFromIndex(11)));
 }
 }}
 
@@ -891,7 +891,7 @@ gdjs.MatchCode.condition0IsTrue_0.val = false;
 gdjs.MatchCode.condition1IsTrue_0.val = false;
 gdjs.MatchCode.condition2IsTrue_0.val = false;
 {
-gdjs.MatchCode.condition0IsTrue_0.val = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(11)) < 4;
+gdjs.MatchCode.condition0IsTrue_0.val = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(17)) < 4;
 }if ( gdjs.MatchCode.condition0IsTrue_0.val ) {
 {
 gdjs.MatchCode.condition1IsTrue_0.val = gdjs.evtTools.input.cursorOnObject(gdjs.MatchCode.mapOfGDgdjs_46MatchCode_46GDRRPlusObjects2Objects, runtimeScene, true, false);
@@ -901,7 +901,7 @@ gdjs.MatchCode.condition2IsTrue_0.val = gdjs.evtTools.input.isMouseButtonRelease
 }}
 }
 if (gdjs.MatchCode.condition2IsTrue_0.val) {
-{runtimeScene.getGame().getVariables().getFromIndex(11).add(1);
+{runtimeScene.getGame().getVariables().getFromIndex(17).add(1);
 }}
 
 }
@@ -915,7 +915,7 @@ gdjs.MatchCode.condition0IsTrue_0.val = false;
 gdjs.MatchCode.condition1IsTrue_0.val = false;
 gdjs.MatchCode.condition2IsTrue_0.val = false;
 {
-gdjs.MatchCode.condition0IsTrue_0.val = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(11)) <= 3;
+gdjs.MatchCode.condition0IsTrue_0.val = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(17)) <= 3;
 }if ( gdjs.MatchCode.condition0IsTrue_0.val ) {
 {
 gdjs.MatchCode.condition1IsTrue_0.val = gdjs.evtTools.input.cursorOnObject(gdjs.MatchCode.mapOfGDgdjs_46MatchCode_46GDRRPlus5Objects2Objects, runtimeScene, true, false);
@@ -925,7 +925,7 @@ gdjs.MatchCode.condition2IsTrue_0.val = gdjs.evtTools.input.isMouseButtonRelease
 }}
 }
 if (gdjs.MatchCode.condition2IsTrue_0.val) {
-{runtimeScene.getGame().getVariables().getFromIndex(11).add(5);
+{runtimeScene.getGame().getVariables().getFromIndex(17).add(5);
 }}
 
 }
@@ -939,7 +939,7 @@ gdjs.MatchCode.condition0IsTrue_0.val = false;
 gdjs.MatchCode.condition1IsTrue_0.val = false;
 gdjs.MatchCode.condition2IsTrue_0.val = false;
 {
-gdjs.MatchCode.condition0IsTrue_0.val = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(11)) > 0;
+gdjs.MatchCode.condition0IsTrue_0.val = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(17)) > 0;
 }if ( gdjs.MatchCode.condition0IsTrue_0.val ) {
 {
 gdjs.MatchCode.condition1IsTrue_0.val = gdjs.evtTools.input.cursorOnObject(gdjs.MatchCode.mapOfGDgdjs_46MatchCode_46GDRRMinusObjects2Objects, runtimeScene, true, false);
@@ -949,7 +949,7 @@ gdjs.MatchCode.condition2IsTrue_0.val = gdjs.evtTools.input.isMouseButtonRelease
 }}
 }
 if (gdjs.MatchCode.condition2IsTrue_0.val) {
-{runtimeScene.getGame().getVariables().getFromIndex(11).sub(1);
+{runtimeScene.getGame().getVariables().getFromIndex(17).sub(1);
 }}
 
 }
@@ -963,7 +963,7 @@ gdjs.MatchCode.condition0IsTrue_0.val = false;
 gdjs.MatchCode.condition1IsTrue_0.val = false;
 gdjs.MatchCode.condition2IsTrue_0.val = false;
 {
-gdjs.MatchCode.condition0IsTrue_0.val = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(11)) >= 1;
+gdjs.MatchCode.condition0IsTrue_0.val = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(17)) >= 1;
 }if ( gdjs.MatchCode.condition0IsTrue_0.val ) {
 {
 gdjs.MatchCode.condition1IsTrue_0.val = gdjs.evtTools.input.cursorOnObject(gdjs.MatchCode.mapOfGDgdjs_46MatchCode_46GDRRMinus5Objects2Objects, runtimeScene, true, false);
@@ -973,7 +973,7 @@ gdjs.MatchCode.condition2IsTrue_0.val = gdjs.evtTools.input.isMouseButtonRelease
 }}
 }
 if (gdjs.MatchCode.condition2IsTrue_0.val) {
-{runtimeScene.getGame().getVariables().getFromIndex(11).sub(5);
+{runtimeScene.getGame().getVariables().getFromIndex(17).sub(5);
 }}
 
 }
@@ -984,9 +984,9 @@ if (gdjs.MatchCode.condition2IsTrue_0.val) {
 
 gdjs.MatchCode.condition0IsTrue_0.val = false;
 {
-gdjs.MatchCode.condition0IsTrue_0.val = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(11)) < 0;
+gdjs.MatchCode.condition0IsTrue_0.val = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(17)) < 0;
 }if (gdjs.MatchCode.condition0IsTrue_0.val) {
-{runtimeScene.getGame().getVariables().getFromIndex(11).setNumber(0);
+{runtimeScene.getGame().getVariables().getFromIndex(17).setNumber(0);
 }}
 
 }
@@ -997,9 +997,9 @@ gdjs.MatchCode.condition0IsTrue_0.val = gdjs.evtTools.variable.getVariableNumber
 
 gdjs.MatchCode.condition0IsTrue_0.val = false;
 {
-gdjs.MatchCode.condition0IsTrue_0.val = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(11)) > 4;
+gdjs.MatchCode.condition0IsTrue_0.val = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(17)) > 4;
 }if (gdjs.MatchCode.condition0IsTrue_0.val) {
-{runtimeScene.getGame().getVariables().getFromIndex(11).setNumber(4);
+{runtimeScene.getGame().getVariables().getFromIndex(17).setNumber(4);
 }}
 
 }
@@ -1011,7 +1011,7 @@ gdjs.MatchCode.condition0IsTrue_0.val = gdjs.evtTools.variable.getVariableNumber
 {
 gdjs.copyArray(runtimeScene.getObjects("RR"), gdjs.MatchCode.GDRRObjects2);
 {for(var i = 0, len = gdjs.MatchCode.GDRRObjects2.length ;i < len;++i) {
-    gdjs.MatchCode.GDRRObjects2[i].setString(gdjs.evtTools.variable.getVariableString(runtimeScene.getGame().getVariables().getFromIndex(11)));
+    gdjs.MatchCode.GDRRObjects2[i].setString(gdjs.evtTools.variable.getVariableString(runtimeScene.getGame().getVariables().getFromIndex(17)));
 }
 }}
 
@@ -1045,7 +1045,7 @@ gdjs.MatchCode.condition0IsTrue_0.val = false;
 gdjs.MatchCode.condition1IsTrue_0.val = false;
 gdjs.MatchCode.condition2IsTrue_0.val = false;
 {
-gdjs.MatchCode.condition0IsTrue_0.val = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(10)) < 4;
+gdjs.MatchCode.condition0IsTrue_0.val = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(14)) < 4;
 }if ( gdjs.MatchCode.condition0IsTrue_0.val ) {
 {
 gdjs.MatchCode.condition1IsTrue_0.val = gdjs.evtTools.input.cursorOnObject(gdjs.MatchCode.mapOfGDgdjs_46MatchCode_46GDRBPlusObjects2Objects, runtimeScene, true, false);
@@ -1055,7 +1055,7 @@ gdjs.MatchCode.condition2IsTrue_0.val = gdjs.evtTools.input.isMouseButtonRelease
 }}
 }
 if (gdjs.MatchCode.condition2IsTrue_0.val) {
-{runtimeScene.getGame().getVariables().getFromIndex(10).add(1);
+{runtimeScene.getGame().getVariables().getFromIndex(14).add(1);
 }}
 
 }
@@ -1069,7 +1069,7 @@ gdjs.MatchCode.condition0IsTrue_0.val = false;
 gdjs.MatchCode.condition1IsTrue_0.val = false;
 gdjs.MatchCode.condition2IsTrue_0.val = false;
 {
-gdjs.MatchCode.condition0IsTrue_0.val = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(10)) <= 3;
+gdjs.MatchCode.condition0IsTrue_0.val = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(14)) <= 3;
 }if ( gdjs.MatchCode.condition0IsTrue_0.val ) {
 {
 gdjs.MatchCode.condition1IsTrue_0.val = gdjs.evtTools.input.cursorOnObject(gdjs.MatchCode.mapOfGDgdjs_46MatchCode_46GDRBPlus5Objects2Objects, runtimeScene, true, false);
@@ -1079,7 +1079,7 @@ gdjs.MatchCode.condition2IsTrue_0.val = gdjs.evtTools.input.isMouseButtonRelease
 }}
 }
 if (gdjs.MatchCode.condition2IsTrue_0.val) {
-{runtimeScene.getGame().getVariables().getFromIndex(10).add(5);
+{runtimeScene.getGame().getVariables().getFromIndex(14).add(5);
 }}
 
 }
@@ -1093,7 +1093,7 @@ gdjs.MatchCode.condition0IsTrue_0.val = false;
 gdjs.MatchCode.condition1IsTrue_0.val = false;
 gdjs.MatchCode.condition2IsTrue_0.val = false;
 {
-gdjs.MatchCode.condition0IsTrue_0.val = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(10)) > 0;
+gdjs.MatchCode.condition0IsTrue_0.val = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(14)) > 0;
 }if ( gdjs.MatchCode.condition0IsTrue_0.val ) {
 {
 gdjs.MatchCode.condition1IsTrue_0.val = gdjs.evtTools.input.cursorOnObject(gdjs.MatchCode.mapOfGDgdjs_46MatchCode_46GDRBMinusObjects2Objects, runtimeScene, true, false);
@@ -1103,7 +1103,7 @@ gdjs.MatchCode.condition2IsTrue_0.val = gdjs.evtTools.input.isMouseButtonRelease
 }}
 }
 if (gdjs.MatchCode.condition2IsTrue_0.val) {
-{runtimeScene.getGame().getVariables().getFromIndex(10).sub(1);
+{runtimeScene.getGame().getVariables().getFromIndex(14).sub(1);
 }}
 
 }
@@ -1117,7 +1117,7 @@ gdjs.MatchCode.condition0IsTrue_0.val = false;
 gdjs.MatchCode.condition1IsTrue_0.val = false;
 gdjs.MatchCode.condition2IsTrue_0.val = false;
 {
-gdjs.MatchCode.condition0IsTrue_0.val = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(10)) >= 1;
+gdjs.MatchCode.condition0IsTrue_0.val = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(14)) >= 1;
 }if ( gdjs.MatchCode.condition0IsTrue_0.val ) {
 {
 gdjs.MatchCode.condition1IsTrue_0.val = gdjs.evtTools.input.cursorOnObject(gdjs.MatchCode.mapOfGDgdjs_46MatchCode_46GDRBMinus5Objects2Objects, runtimeScene, true, false);
@@ -1127,7 +1127,7 @@ gdjs.MatchCode.condition2IsTrue_0.val = gdjs.evtTools.input.isMouseButtonRelease
 }}
 }
 if (gdjs.MatchCode.condition2IsTrue_0.val) {
-{runtimeScene.getGame().getVariables().getFromIndex(10).sub(5);
+{runtimeScene.getGame().getVariables().getFromIndex(14).sub(5);
 }}
 
 }
@@ -1138,9 +1138,9 @@ if (gdjs.MatchCode.condition2IsTrue_0.val) {
 
 gdjs.MatchCode.condition0IsTrue_0.val = false;
 {
-gdjs.MatchCode.condition0IsTrue_0.val = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(10)) < 0;
+gdjs.MatchCode.condition0IsTrue_0.val = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(14)) < 0;
 }if (gdjs.MatchCode.condition0IsTrue_0.val) {
-{runtimeScene.getGame().getVariables().getFromIndex(10).setNumber(0);
+{runtimeScene.getGame().getVariables().getFromIndex(14).setNumber(0);
 }}
 
 }
@@ -1151,9 +1151,9 @@ gdjs.MatchCode.condition0IsTrue_0.val = gdjs.evtTools.variable.getVariableNumber
 
 gdjs.MatchCode.condition0IsTrue_0.val = false;
 {
-gdjs.MatchCode.condition0IsTrue_0.val = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(10)) > 4;
+gdjs.MatchCode.condition0IsTrue_0.val = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(14)) > 4;
 }if (gdjs.MatchCode.condition0IsTrue_0.val) {
-{runtimeScene.getGame().getVariables().getFromIndex(10).setNumber(4);
+{runtimeScene.getGame().getVariables().getFromIndex(14).setNumber(4);
 }}
 
 }
@@ -1165,7 +1165,7 @@ gdjs.MatchCode.condition0IsTrue_0.val = gdjs.evtTools.variable.getVariableNumber
 {
 gdjs.copyArray(runtimeScene.getObjects("RB"), gdjs.MatchCode.GDRBObjects2);
 {for(var i = 0, len = gdjs.MatchCode.GDRBObjects2.length ;i < len;++i) {
-    gdjs.MatchCode.GDRBObjects2[i].setString(gdjs.evtTools.variable.getVariableString(runtimeScene.getGame().getVariables().getFromIndex(10)));
+    gdjs.MatchCode.GDRBObjects2[i].setString(gdjs.evtTools.variable.getVariableString(runtimeScene.getGame().getVariables().getFromIndex(14)));
 }
 }}
 
@@ -1199,7 +1199,7 @@ gdjs.MatchCode.condition0IsTrue_0.val = false;
 gdjs.MatchCode.condition1IsTrue_0.val = false;
 gdjs.MatchCode.condition2IsTrue_0.val = false;
 {
-gdjs.MatchCode.condition0IsTrue_0.val = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(12)) < 36;
+gdjs.MatchCode.condition0IsTrue_0.val = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(20)) < 36;
 }if ( gdjs.MatchCode.condition0IsTrue_0.val ) {
 {
 gdjs.MatchCode.condition1IsTrue_0.val = gdjs.evtTools.input.cursorOnObject(gdjs.MatchCode.mapOfGDgdjs_46MatchCode_46GDTRPlusObjects2Objects, runtimeScene, true, false);
@@ -1209,7 +1209,7 @@ gdjs.MatchCode.condition2IsTrue_0.val = gdjs.evtTools.input.isMouseButtonRelease
 }}
 }
 if (gdjs.MatchCode.condition2IsTrue_0.val) {
-{runtimeScene.getGame().getVariables().getFromIndex(12).add(1);
+{runtimeScene.getGame().getVariables().getFromIndex(20).add(1);
 }}
 
 }
@@ -1223,7 +1223,7 @@ gdjs.MatchCode.condition0IsTrue_0.val = false;
 gdjs.MatchCode.condition1IsTrue_0.val = false;
 gdjs.MatchCode.condition2IsTrue_0.val = false;
 {
-gdjs.MatchCode.condition0IsTrue_0.val = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(12)) <= 35;
+gdjs.MatchCode.condition0IsTrue_0.val = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(20)) <= 35;
 }if ( gdjs.MatchCode.condition0IsTrue_0.val ) {
 {
 gdjs.MatchCode.condition1IsTrue_0.val = gdjs.evtTools.input.cursorOnObject(gdjs.MatchCode.mapOfGDgdjs_46MatchCode_46GDTRPlus5Objects2Objects, runtimeScene, true, false);
@@ -1233,7 +1233,7 @@ gdjs.MatchCode.condition2IsTrue_0.val = gdjs.evtTools.input.isMouseButtonRelease
 }}
 }
 if (gdjs.MatchCode.condition2IsTrue_0.val) {
-{runtimeScene.getGame().getVariables().getFromIndex(12).add(5);
+{runtimeScene.getGame().getVariables().getFromIndex(20).add(5);
 }}
 
 }
@@ -1247,7 +1247,7 @@ gdjs.MatchCode.condition0IsTrue_0.val = false;
 gdjs.MatchCode.condition1IsTrue_0.val = false;
 gdjs.MatchCode.condition2IsTrue_0.val = false;
 {
-gdjs.MatchCode.condition0IsTrue_0.val = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(12)) > 0;
+gdjs.MatchCode.condition0IsTrue_0.val = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(20)) > 0;
 }if ( gdjs.MatchCode.condition0IsTrue_0.val ) {
 {
 gdjs.MatchCode.condition1IsTrue_0.val = gdjs.evtTools.input.cursorOnObject(gdjs.MatchCode.mapOfGDgdjs_46MatchCode_46GDTRMinusObjects2Objects, runtimeScene, true, false);
@@ -1257,7 +1257,7 @@ gdjs.MatchCode.condition2IsTrue_0.val = gdjs.evtTools.input.isMouseButtonRelease
 }}
 }
 if (gdjs.MatchCode.condition2IsTrue_0.val) {
-{runtimeScene.getGame().getVariables().getFromIndex(12).sub(1);
+{runtimeScene.getGame().getVariables().getFromIndex(20).sub(1);
 }}
 
 }
@@ -1271,7 +1271,7 @@ gdjs.MatchCode.condition0IsTrue_0.val = false;
 gdjs.MatchCode.condition1IsTrue_0.val = false;
 gdjs.MatchCode.condition2IsTrue_0.val = false;
 {
-gdjs.MatchCode.condition0IsTrue_0.val = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(12)) >= 1;
+gdjs.MatchCode.condition0IsTrue_0.val = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(20)) >= 1;
 }if ( gdjs.MatchCode.condition0IsTrue_0.val ) {
 {
 gdjs.MatchCode.condition1IsTrue_0.val = gdjs.evtTools.input.cursorOnObject(gdjs.MatchCode.mapOfGDgdjs_46MatchCode_46GDTRMinus5Objects2Objects, runtimeScene, true, false);
@@ -1281,7 +1281,7 @@ gdjs.MatchCode.condition2IsTrue_0.val = gdjs.evtTools.input.isMouseButtonRelease
 }}
 }
 if (gdjs.MatchCode.condition2IsTrue_0.val) {
-{runtimeScene.getGame().getVariables().getFromIndex(12).sub(5);
+{runtimeScene.getGame().getVariables().getFromIndex(20).sub(5);
 }}
 
 }
@@ -1292,9 +1292,9 @@ if (gdjs.MatchCode.condition2IsTrue_0.val) {
 
 gdjs.MatchCode.condition0IsTrue_0.val = false;
 {
-gdjs.MatchCode.condition0IsTrue_0.val = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(12)) < 0;
+gdjs.MatchCode.condition0IsTrue_0.val = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(20)) < 0;
 }if (gdjs.MatchCode.condition0IsTrue_0.val) {
-{runtimeScene.getGame().getVariables().getFromIndex(12).setNumber(0);
+{runtimeScene.getGame().getVariables().getFromIndex(20).setNumber(0);
 }}
 
 }
@@ -1305,9 +1305,9 @@ gdjs.MatchCode.condition0IsTrue_0.val = gdjs.evtTools.variable.getVariableNumber
 
 gdjs.MatchCode.condition0IsTrue_0.val = false;
 {
-gdjs.MatchCode.condition0IsTrue_0.val = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(12)) > 36;
+gdjs.MatchCode.condition0IsTrue_0.val = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(20)) > 36;
 }if (gdjs.MatchCode.condition0IsTrue_0.val) {
-{runtimeScene.getGame().getVariables().getFromIndex(12).setNumber(36);
+{runtimeScene.getGame().getVariables().getFromIndex(20).setNumber(36);
 }}
 
 }
@@ -1319,15 +1319,15 @@ gdjs.MatchCode.condition0IsTrue_0.val = gdjs.evtTools.variable.getVariableNumber
 gdjs.MatchCode.condition0IsTrue_0.val = false;
 gdjs.MatchCode.condition1IsTrue_0.val = false;
 {
-gdjs.MatchCode.condition0IsTrue_0.val = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(12)) <= 36;
+gdjs.MatchCode.condition0IsTrue_0.val = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(20)) <= 36;
 }if ( gdjs.MatchCode.condition0IsTrue_0.val ) {
 {
-gdjs.MatchCode.condition1IsTrue_0.val = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(12)) >= 0;
+gdjs.MatchCode.condition1IsTrue_0.val = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(20)) >= 0;
 }}
 if (gdjs.MatchCode.condition1IsTrue_0.val) {
 gdjs.copyArray(runtimeScene.getObjects("TR"), gdjs.MatchCode.GDTRObjects2);
 {for(var i = 0, len = gdjs.MatchCode.GDTRObjects2.length ;i < len;++i) {
-    gdjs.MatchCode.GDTRObjects2[i].setString(gdjs.evtTools.variable.getVariableString(runtimeScene.getGame().getVariables().getFromIndex(12)));
+    gdjs.MatchCode.GDTRObjects2[i].setString(gdjs.evtTools.variable.getVariableString(runtimeScene.getGame().getVariables().getFromIndex(20)));
 }
 }}
 
@@ -1361,7 +1361,7 @@ gdjs.MatchCode.condition0IsTrue_0.val = false;
 gdjs.MatchCode.condition1IsTrue_0.val = false;
 gdjs.MatchCode.condition2IsTrue_0.val = false;
 {
-gdjs.MatchCode.condition0IsTrue_0.val = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(13)) < 36;
+gdjs.MatchCode.condition0IsTrue_0.val = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(23)) < 36;
 }if ( gdjs.MatchCode.condition0IsTrue_0.val ) {
 {
 gdjs.MatchCode.condition1IsTrue_0.val = gdjs.evtTools.input.cursorOnObject(gdjs.MatchCode.mapOfGDgdjs_46MatchCode_46GDTBPlusObjects2Objects, runtimeScene, true, false);
@@ -1371,7 +1371,7 @@ gdjs.MatchCode.condition2IsTrue_0.val = gdjs.evtTools.input.isMouseButtonRelease
 }}
 }
 if (gdjs.MatchCode.condition2IsTrue_0.val) {
-{runtimeScene.getGame().getVariables().getFromIndex(13).add(1);
+{runtimeScene.getGame().getVariables().getFromIndex(23).add(1);
 }}
 
 }
@@ -1385,7 +1385,7 @@ gdjs.MatchCode.condition0IsTrue_0.val = false;
 gdjs.MatchCode.condition1IsTrue_0.val = false;
 gdjs.MatchCode.condition2IsTrue_0.val = false;
 {
-gdjs.MatchCode.condition0IsTrue_0.val = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(13)) <= 35;
+gdjs.MatchCode.condition0IsTrue_0.val = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(23)) <= 35;
 }if ( gdjs.MatchCode.condition0IsTrue_0.val ) {
 {
 gdjs.MatchCode.condition1IsTrue_0.val = gdjs.evtTools.input.cursorOnObject(gdjs.MatchCode.mapOfGDgdjs_46MatchCode_46GDTBPlus5Objects2Objects, runtimeScene, true, false);
@@ -1395,7 +1395,7 @@ gdjs.MatchCode.condition2IsTrue_0.val = gdjs.evtTools.input.isMouseButtonRelease
 }}
 }
 if (gdjs.MatchCode.condition2IsTrue_0.val) {
-{runtimeScene.getGame().getVariables().getFromIndex(13).add(5);
+{runtimeScene.getGame().getVariables().getFromIndex(23).add(5);
 }}
 
 }
@@ -1409,7 +1409,7 @@ gdjs.MatchCode.condition0IsTrue_0.val = false;
 gdjs.MatchCode.condition1IsTrue_0.val = false;
 gdjs.MatchCode.condition2IsTrue_0.val = false;
 {
-gdjs.MatchCode.condition0IsTrue_0.val = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(13)) > 0;
+gdjs.MatchCode.condition0IsTrue_0.val = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(23)) > 0;
 }if ( gdjs.MatchCode.condition0IsTrue_0.val ) {
 {
 gdjs.MatchCode.condition1IsTrue_0.val = gdjs.evtTools.input.cursorOnObject(gdjs.MatchCode.mapOfGDgdjs_46MatchCode_46GDTBMinusObjects2Objects, runtimeScene, true, false);
@@ -1419,7 +1419,7 @@ gdjs.MatchCode.condition2IsTrue_0.val = gdjs.evtTools.input.isMouseButtonRelease
 }}
 }
 if (gdjs.MatchCode.condition2IsTrue_0.val) {
-{runtimeScene.getGame().getVariables().getFromIndex(13).sub(1);
+{runtimeScene.getGame().getVariables().getFromIndex(23).sub(1);
 }}
 
 }
@@ -1433,7 +1433,7 @@ gdjs.MatchCode.condition0IsTrue_0.val = false;
 gdjs.MatchCode.condition1IsTrue_0.val = false;
 gdjs.MatchCode.condition2IsTrue_0.val = false;
 {
-gdjs.MatchCode.condition0IsTrue_0.val = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(13)) >= 1;
+gdjs.MatchCode.condition0IsTrue_0.val = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(23)) >= 1;
 }if ( gdjs.MatchCode.condition0IsTrue_0.val ) {
 {
 gdjs.MatchCode.condition1IsTrue_0.val = gdjs.evtTools.input.cursorOnObject(gdjs.MatchCode.mapOfGDgdjs_46MatchCode_46GDTBMinus5Objects2Objects, runtimeScene, true, false);
@@ -1443,7 +1443,7 @@ gdjs.MatchCode.condition2IsTrue_0.val = gdjs.evtTools.input.isMouseButtonRelease
 }}
 }
 if (gdjs.MatchCode.condition2IsTrue_0.val) {
-{runtimeScene.getGame().getVariables().getFromIndex(13).sub(5);
+{runtimeScene.getGame().getVariables().getFromIndex(23).sub(5);
 }}
 
 }
@@ -1454,9 +1454,9 @@ if (gdjs.MatchCode.condition2IsTrue_0.val) {
 
 gdjs.MatchCode.condition0IsTrue_0.val = false;
 {
-gdjs.MatchCode.condition0IsTrue_0.val = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(13)) < 0;
+gdjs.MatchCode.condition0IsTrue_0.val = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(23)) < 0;
 }if (gdjs.MatchCode.condition0IsTrue_0.val) {
-{runtimeScene.getGame().getVariables().getFromIndex(13).setNumber(0);
+{runtimeScene.getGame().getVariables().getFromIndex(23).setNumber(0);
 }}
 
 }
@@ -1467,9 +1467,9 @@ gdjs.MatchCode.condition0IsTrue_0.val = gdjs.evtTools.variable.getVariableNumber
 
 gdjs.MatchCode.condition0IsTrue_0.val = false;
 {
-gdjs.MatchCode.condition0IsTrue_0.val = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(13)) > 36;
+gdjs.MatchCode.condition0IsTrue_0.val = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(23)) > 36;
 }if (gdjs.MatchCode.condition0IsTrue_0.val) {
-{runtimeScene.getGame().getVariables().getFromIndex(13).setNumber(36);
+{runtimeScene.getGame().getVariables().getFromIndex(23).setNumber(36);
 }}
 
 }
@@ -1481,15 +1481,15 @@ gdjs.MatchCode.condition0IsTrue_0.val = gdjs.evtTools.variable.getVariableNumber
 gdjs.MatchCode.condition0IsTrue_0.val = false;
 gdjs.MatchCode.condition1IsTrue_0.val = false;
 {
-gdjs.MatchCode.condition0IsTrue_0.val = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(13)) >= 0;
+gdjs.MatchCode.condition0IsTrue_0.val = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(23)) >= 0;
 }if ( gdjs.MatchCode.condition0IsTrue_0.val ) {
 {
-gdjs.MatchCode.condition1IsTrue_0.val = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(13)) <= 36;
+gdjs.MatchCode.condition1IsTrue_0.val = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(23)) <= 36;
 }}
 if (gdjs.MatchCode.condition1IsTrue_0.val) {
 gdjs.copyArray(runtimeScene.getObjects("TB"), gdjs.MatchCode.GDTBObjects2);
 {for(var i = 0, len = gdjs.MatchCode.GDTBObjects2.length ;i < len;++i) {
-    gdjs.MatchCode.GDTBObjects2[i].setString(gdjs.evtTools.variable.getVariableString(runtimeScene.getGame().getVariables().getFromIndex(13)));
+    gdjs.MatchCode.GDTBObjects2[i].setString(gdjs.evtTools.variable.getVariableString(runtimeScene.getGame().getVariables().getFromIndex(23)));
 }
 }}
 
@@ -1607,13 +1607,13 @@ gdjs.MatchCode.condition1IsTrue_0.val = gdjs.evtTools.input.isMouseButtonRelease
 }}
 if (gdjs.MatchCode.condition1IsTrue_0.val) {
 {runtimeScene.getGame().getVariables().getFromIndex(2).setNumber(0);
-}{runtimeScene.getGame().getVariables().getFromIndex(6).setNumber(0);
+}{runtimeScene.getGame().getVariables().getFromIndex(8).setNumber(0);
 }{runtimeScene.getGame().getVariables().getFromIndex(5).setNumber(0);
-}{runtimeScene.getGame().getVariables().getFromIndex(9).setNumber(0);
 }{runtimeScene.getGame().getVariables().getFromIndex(11).setNumber(0);
-}{runtimeScene.getGame().getVariables().getFromIndex(10).setNumber(0);
-}{runtimeScene.getGame().getVariables().getFromIndex(12).setNumber(0);
-}{runtimeScene.getGame().getVariables().getFromIndex(13).setNumber(0);
+}{runtimeScene.getGame().getVariables().getFromIndex(17).setNumber(0);
+}{runtimeScene.getGame().getVariables().getFromIndex(14).setNumber(0);
+}{runtimeScene.getGame().getVariables().getFromIndex(20).setNumber(0);
+}{runtimeScene.getGame().getVariables().getFromIndex(23).setNumber(0);
 }}
 
 }
