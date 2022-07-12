@@ -88,9 +88,15 @@ gdjs.MatchSwipeCode.conditionTrue_0 = {val:false};
 gdjs.MatchSwipeCode.condition0IsTrue_0 = {val:false};
 gdjs.MatchSwipeCode.condition1IsTrue_0 = {val:false};
 gdjs.MatchSwipeCode.condition2IsTrue_0 = {val:false};
+gdjs.MatchSwipeCode.conditionTrue_1 = {val:false};
+gdjs.MatchSwipeCode.condition0IsTrue_1 = {val:false};
+gdjs.MatchSwipeCode.condition1IsTrue_1 = {val:false};
+gdjs.MatchSwipeCode.condition2IsTrue_1 = {val:false};
 
 
 gdjs.MatchSwipeCode.eventsList0 = function(runtimeScene) {
+
+};gdjs.MatchSwipeCode.eventsList1 = function(runtimeScene) {
 
 {
 
@@ -144,7 +150,7 @@ gdjs.copyArray(runtimeScene.getObjects("ScoreBlueTxt"), gdjs.MatchSwipeCode.GDSc
 }
 
 
-};gdjs.MatchSwipeCode.eventsList1 = function(runtimeScene) {
+};gdjs.MatchSwipeCode.eventsList2 = function(runtimeScene) {
 
 {
 
@@ -313,7 +319,7 @@ gdjs.copyArray(runtimeScene.getObjects("HR"), gdjs.MatchSwipeCode.GDHRObjects1);
 }
 
 
-};gdjs.MatchSwipeCode.eventsList2 = function(runtimeScene) {
+};gdjs.MatchSwipeCode.eventsList3 = function(runtimeScene) {
 
 {
 
@@ -482,7 +488,7 @@ gdjs.copyArray(runtimeScene.getObjects("LR"), gdjs.MatchSwipeCode.GDLRObjects1);
 }
 
 
-};gdjs.MatchSwipeCode.eventsList3 = function(runtimeScene) {
+};gdjs.MatchSwipeCode.eventsList4 = function(runtimeScene) {
 
 {
 
@@ -616,7 +622,7 @@ gdjs.copyArray(runtimeScene.getObjects("HB"), gdjs.MatchSwipeCode.GDHBObjects1);
 }
 
 
-};gdjs.MatchSwipeCode.eventsList4 = function(runtimeScene) {
+};gdjs.MatchSwipeCode.eventsList5 = function(runtimeScene) {
 
 {
 
@@ -750,7 +756,7 @@ gdjs.copyArray(runtimeScene.getObjects("LB"), gdjs.MatchSwipeCode.GDLBObjects1);
 }
 
 
-};gdjs.MatchSwipeCode.eventsList5 = function(runtimeScene) {
+};gdjs.MatchSwipeCode.eventsList6 = function(runtimeScene) {
 
 {
 
@@ -876,7 +882,7 @@ gdjs.copyArray(runtimeScene.getObjects("RR"), gdjs.MatchSwipeCode.GDRRObjects1);
 }
 
 
-};gdjs.MatchSwipeCode.eventsList6 = function(runtimeScene) {
+};gdjs.MatchSwipeCode.eventsList7 = function(runtimeScene) {
 
 {
 
@@ -1002,7 +1008,7 @@ gdjs.copyArray(runtimeScene.getObjects("RB"), gdjs.MatchSwipeCode.GDRBObjects1);
 }
 
 
-};gdjs.MatchSwipeCode.eventsList7 = function(runtimeScene) {
+};gdjs.MatchSwipeCode.eventsList8 = function(runtimeScene) {
 
 {
 
@@ -1136,7 +1142,7 @@ gdjs.copyArray(runtimeScene.getObjects("TR"), gdjs.MatchSwipeCode.GDTRObjects1);
 }
 
 
-};gdjs.MatchSwipeCode.eventsList8 = function(runtimeScene) {
+};gdjs.MatchSwipeCode.eventsList9 = function(runtimeScene) {
 
 {
 
@@ -1271,7 +1277,7 @@ gdjs.copyArray(runtimeScene.getObjects("TB"), gdjs.MatchSwipeCode.GDTBObjects1);
 
 
 };gdjs.MatchSwipeCode.mapOfGDgdjs_46MatchSwipeCode_46GDAutonSelectorObjects2Objects = Hashtable.newFrom({"AutonSelector": gdjs.MatchSwipeCode.GDAutonSelectorObjects2});
-gdjs.MatchSwipeCode.eventsList9 = function(runtimeScene) {
+gdjs.MatchSwipeCode.eventsList10 = function(runtimeScene) {
 
 {
 
@@ -1384,7 +1390,7 @@ gdjs.MatchSwipeCode.GDAutonSelectorObjects1.length = k;}if (gdjs.MatchSwipeCode.
 
 };gdjs.MatchSwipeCode.mapOfGDgdjs_46MatchSwipeCode_46GDClearObjects2Objects = Hashtable.newFrom({"Clear": gdjs.MatchSwipeCode.GDClearObjects2});
 gdjs.MatchSwipeCode.mapOfGDgdjs_46MatchSwipeCode_46GDSkillsObjects2Objects = Hashtable.newFrom({"Skills": gdjs.MatchSwipeCode.GDSkillsObjects2});
-gdjs.MatchSwipeCode.eventsList10 = function(runtimeScene) {
+gdjs.MatchSwipeCode.eventsList11 = function(runtimeScene) {
 
 {
 
@@ -1451,12 +1457,27 @@ gdjs.copyArray(runtimeScene.getObjects("SkillsTxt"), gdjs.MatchSwipeCode.GDSkill
 }
 
 
-};gdjs.MatchSwipeCode.eventsList11 = function(runtimeScene) {
+};gdjs.MatchSwipeCode.eventsList12 = function(runtimeScene) {
 
 {
 
 
 gdjs.MatchSwipeCode.eventsList0(runtimeScene);
+}
+
+
+{
+
+
+gdjs.MatchSwipeCode.condition0IsTrue_0.val = false;
+{
+{gdjs.MatchSwipeCode.conditionTrue_1 = gdjs.MatchSwipeCode.condition0IsTrue_0;
+gdjs.MatchSwipeCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(8029572);
+}
+}if (gdjs.MatchSwipeCode.condition0IsTrue_0.val) {
+{gdjs.deviceVibration.startVibration(1);
+}}
+
 }
 
 
@@ -1527,6 +1548,13 @@ gdjs.MatchSwipeCode.eventsList9(runtimeScene);
 
 
 gdjs.MatchSwipeCode.eventsList10(runtimeScene);
+}
+
+
+{
+
+
+gdjs.MatchSwipeCode.eventsList11(runtimeScene);
 }
 
 
@@ -1620,7 +1648,7 @@ gdjs.MatchSwipeCode.GDAutonSelectorObjects1.length = 0;
 gdjs.MatchSwipeCode.GDAutonSelectorObjects2.length = 0;
 gdjs.MatchSwipeCode.GDAutonSelectorObjects3.length = 0;
 
-gdjs.MatchSwipeCode.eventsList11(runtimeScene);
+gdjs.MatchSwipeCode.eventsList12(runtimeScene);
 return;
 
 }
