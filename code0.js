@@ -1255,6 +1255,7 @@ if (gdjs.MatchSwipeCode.condition1IsTrue_0.val) {
 {for(var i = 0, len = gdjs.MatchSwipeCode.GDAutonSelectorObjects2.length ;i < len;++i) {
     gdjs.MatchSwipeCode.GDAutonSelectorObjects2[i].setAnimation(gdjs.MatchSwipeCode.GDAutonSelectorObjects2[i].getAnimation() + (1));
 }
+}{gdjs.deviceVibration.startVibration(15);
 }}
 
 }
@@ -1372,7 +1373,7 @@ if (gdjs.MatchSwipeCode.condition1IsTrue_0.val) {
 }{runtimeScene.getGame().getVariables().getFromIndex(8).setNumber(0);
 }{runtimeScene.getGame().getVariables().getFromIndex(10).setNumber(0);
 }{runtimeScene.getGame().getVariables().getFromIndex(11).setNumber(0);
-}{gdjs.deviceVibration.startVibration(5);
+}{gdjs.deviceVibration.startVibration(15);
 }}
 
 }
@@ -1392,7 +1393,7 @@ gdjs.MatchSwipeCode.condition1IsTrue_0.val = gdjs.evtTools.input.isMouseButtonRe
 }}
 if (gdjs.MatchSwipeCode.condition1IsTrue_0.val) {
 {gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "Skills", false);
-}{gdjs.deviceVibration.startVibration(5);
+}{gdjs.deviceVibration.startVibration(15);
 }}
 
 }
