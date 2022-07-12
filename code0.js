@@ -88,10 +88,6 @@ gdjs.MatchSwipeCode.conditionTrue_0 = {val:false};
 gdjs.MatchSwipeCode.condition0IsTrue_0 = {val:false};
 gdjs.MatchSwipeCode.condition1IsTrue_0 = {val:false};
 gdjs.MatchSwipeCode.condition2IsTrue_0 = {val:false};
-gdjs.MatchSwipeCode.conditionTrue_1 = {val:false};
-gdjs.MatchSwipeCode.condition0IsTrue_1 = {val:false};
-gdjs.MatchSwipeCode.condition1IsTrue_1 = {val:false};
-gdjs.MatchSwipeCode.condition2IsTrue_1 = {val:false};
 
 
 gdjs.MatchSwipeCode.eventsList0 = function(runtimeScene) {
@@ -1471,9 +1467,7 @@ gdjs.MatchSwipeCode.eventsList0(runtimeScene);
 
 gdjs.MatchSwipeCode.condition0IsTrue_0.val = false;
 {
-{gdjs.MatchSwipeCode.conditionTrue_1 = gdjs.MatchSwipeCode.condition0IsTrue_0;
-gdjs.MatchSwipeCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(8029572);
-}
+gdjs.MatchSwipeCode.condition0IsTrue_0.val = gdjs.evtTools.runtimeScene.sceneJustBegins(runtimeScene);
 }if (gdjs.MatchSwipeCode.condition0IsTrue_0.val) {
 {gdjs.deviceVibration.startVibration(50);
 }}
