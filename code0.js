@@ -1475,7 +1475,7 @@ gdjs.MatchSwipeCode.condition0IsTrue_0.val = false;
 gdjs.MatchSwipeCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(8029572);
 }
 }if (gdjs.MatchSwipeCode.condition0IsTrue_0.val) {
-{gdjs.deviceVibration.startVibration(1);
+{gdjs.deviceVibration.startVibration(3);
 }}
 
 }
