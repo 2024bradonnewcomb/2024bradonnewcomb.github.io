@@ -175,6 +175,7 @@ gdjs.MatchSwipeCode.condition0IsTrue_0.val = false;
 gdjs.MatchSwipeCode.condition0IsTrue_0.val = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(2)) != gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(4));
 }if (gdjs.MatchSwipeCode.condition0IsTrue_0.val) {
 {gdjs.deviceVibration.startVibration(5);
+}{gdjs.evtTools.sound.playSound(runtimeScene, "Click.mp3", false, 10, 1);
 }}
 
 }
@@ -344,6 +345,7 @@ gdjs.MatchSwipeCode.condition0IsTrue_0.val = false;
 gdjs.MatchSwipeCode.condition0IsTrue_0.val = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(8)) != gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(10));
 }if (gdjs.MatchSwipeCode.condition0IsTrue_0.val) {
 {gdjs.deviceVibration.startVibration(5);
+}{gdjs.evtTools.sound.playSound(runtimeScene, "Click.mp3", false, 10, 1);
 }}
 
 }
@@ -513,6 +515,7 @@ gdjs.MatchSwipeCode.condition0IsTrue_0.val = false;
 gdjs.MatchSwipeCode.condition0IsTrue_0.val = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(5)) != gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(7));
 }if (gdjs.MatchSwipeCode.condition0IsTrue_0.val) {
 {gdjs.deviceVibration.startVibration(5);
+}{gdjs.evtTools.sound.playSound(runtimeScene, "Click.mp3", false, 10, 1);
 }}
 
 }
@@ -682,6 +685,7 @@ gdjs.MatchSwipeCode.condition0IsTrue_0.val = false;
 gdjs.MatchSwipeCode.condition0IsTrue_0.val = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(11)) != gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(13));
 }if (gdjs.MatchSwipeCode.condition0IsTrue_0.val) {
 {gdjs.deviceVibration.startVibration(5);
+}{gdjs.evtTools.sound.playSound(runtimeScene, "Click.mp3", false, 10, 1);
 }}
 
 }
@@ -851,6 +855,7 @@ gdjs.MatchSwipeCode.condition0IsTrue_0.val = false;
 gdjs.MatchSwipeCode.condition0IsTrue_0.val = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(17)) != gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(19));
 }if (gdjs.MatchSwipeCode.condition0IsTrue_0.val) {
 {gdjs.deviceVibration.startVibration(5);
+}{gdjs.evtTools.sound.playSound(runtimeScene, "Click.mp3", false, 10, 1);
 }}
 
 }
@@ -1020,6 +1025,7 @@ gdjs.MatchSwipeCode.condition0IsTrue_0.val = false;
 gdjs.MatchSwipeCode.condition0IsTrue_0.val = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(14)) != gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(16));
 }if (gdjs.MatchSwipeCode.condition0IsTrue_0.val) {
 {gdjs.deviceVibration.startVibration(5);
+}{gdjs.evtTools.sound.playSound(runtimeScene, "Click.mp3", false, 10, 1);
 }}
 
 }
@@ -1044,19 +1050,6 @@ gdjs.copyArray(runtimeScene.getObjects("RollerBlueSwipe"), gdjs.MatchSwipeCode.G
 {for(var i = 0, len = gdjs.MatchSwipeCode.GDRollerBlueSwipeObjects2.length ;i < len;++i) {
     gdjs.MatchSwipeCode.GDRollerBlueSwipeObjects2[i].setY((( gdjs.MatchSwipeCode.GDRollerBlueObjects2.length === 0 ) ? 0 :gdjs.MatchSwipeCode.GDRollerBlueObjects2[0].getCenterYInScene()) - (0.5 * (gdjs.MatchSwipeCode.GDRollerBlueSwipeObjects2[i].getHeight())));
 }
-}}
-
-}
-
-
-{
-
-
-gdjs.MatchSwipeCode.condition0IsTrue_0.val = false;
-{
-gdjs.MatchSwipeCode.condition0IsTrue_0.val = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(14)) != gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(16));
-}if (gdjs.MatchSwipeCode.condition0IsTrue_0.val) {
-{gdjs.deviceVibration.startVibration(5);
 }}
 
 }
@@ -1198,15 +1191,11 @@ gdjs.copyArray(runtimeScene.getObjects("RollerBlue"), gdjs.MatchSwipeCode.GDRoll
 
 
 gdjs.MatchSwipeCode.condition0IsTrue_0.val = false;
-gdjs.MatchSwipeCode.condition1IsTrue_0.val = false;
 {
-gdjs.MatchSwipeCode.condition0IsTrue_0.val = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(20)) < 36;
-}if ( gdjs.MatchSwipeCode.condition0IsTrue_0.val ) {
-{
-gdjs.MatchSwipeCode.condition1IsTrue_0.val = gdjs.evtTools.input.isMouseButtonReleased(runtimeScene, "Left");
-}}
-if (gdjs.MatchSwipeCode.condition1IsTrue_0.val) {
-{runtimeScene.getGame().getVariables().getFromIndex(20).add(1);
+gdjs.MatchSwipeCode.condition0IsTrue_0.val = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(20)) != gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(22));
+}if (gdjs.MatchSwipeCode.condition0IsTrue_0.val) {
+{gdjs.deviceVibration.startVibration(5);
+}{gdjs.evtTools.sound.playSound(runtimeScene, "Click.mp3", false, 10, 1);
 }}
 
 }
@@ -1215,16 +1204,8 @@ if (gdjs.MatchSwipeCode.condition1IsTrue_0.val) {
 {
 
 
-gdjs.MatchSwipeCode.condition0IsTrue_0.val = false;
-gdjs.MatchSwipeCode.condition1IsTrue_0.val = false;
 {
-gdjs.MatchSwipeCode.condition0IsTrue_0.val = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(20)) <= 35;
-}if ( gdjs.MatchSwipeCode.condition0IsTrue_0.val ) {
-{
-gdjs.MatchSwipeCode.condition1IsTrue_0.val = gdjs.evtTools.input.isMouseButtonReleased(runtimeScene, "Left");
-}}
-if (gdjs.MatchSwipeCode.condition1IsTrue_0.val) {
-{runtimeScene.getGame().getVariables().getFromIndex(20).add(5);
+{runtimeScene.getGame().getVariables().getFromIndex(22).setNumber(gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(20)));
 }}
 
 }
@@ -1233,16 +1214,43 @@ if (gdjs.MatchSwipeCode.condition1IsTrue_0.val) {
 {
 
 
+{
+gdjs.copyArray(runtimeScene.getObjects("TileRed"), gdjs.MatchSwipeCode.GDTileRedObjects2);
+gdjs.copyArray(runtimeScene.getObjects("TileRedSwipe"), gdjs.MatchSwipeCode.GDTileRedSwipeObjects2);
+{for(var i = 0, len = gdjs.MatchSwipeCode.GDTileRedSwipeObjects2.length ;i < len;++i) {
+    gdjs.MatchSwipeCode.GDTileRedSwipeObjects2[i].setY((( gdjs.MatchSwipeCode.GDTileRedObjects2.length === 0 ) ? 0 :gdjs.MatchSwipeCode.GDTileRedObjects2[0].getCenterYInScene()) - (0.5 * (gdjs.MatchSwipeCode.GDTileRedSwipeObjects2[i].getHeight())));
+}
+}}
+
+}
+
+
+{
+
+gdjs.copyArray(runtimeScene.getObjects("TileRed"), gdjs.MatchSwipeCode.GDTileRedObjects2);
+gdjs.copyArray(runtimeScene.getObjects("TileRedSwipe"), gdjs.MatchSwipeCode.GDTileRedSwipeObjects2);
+
 gdjs.MatchSwipeCode.condition0IsTrue_0.val = false;
 gdjs.MatchSwipeCode.condition1IsTrue_0.val = false;
 {
-gdjs.MatchSwipeCode.condition0IsTrue_0.val = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(20)) > 0;
+gdjs.MatchSwipeCode.condition0IsTrue_0.val = gdjs.evtTools.input.isMouseButtonReleased(runtimeScene, "Left");
 }if ( gdjs.MatchSwipeCode.condition0IsTrue_0.val ) {
 {
-gdjs.MatchSwipeCode.condition1IsTrue_0.val = gdjs.evtTools.input.isMouseButtonReleased(runtimeScene, "Left");
-}}
+for(var i = 0, k = 0, l = gdjs.MatchSwipeCode.GDTileRedSwipeObjects2.length;i<l;++i) {
+    if ( gdjs.MatchSwipeCode.GDTileRedSwipeObjects2[i].getX() != (( gdjs.MatchSwipeCode.GDTileRedObjects2.length === 0 ) ? 0 :gdjs.MatchSwipeCode.GDTileRedObjects2[0].getPointX("")) ) {
+        gdjs.MatchSwipeCode.condition1IsTrue_0.val = true;
+        gdjs.MatchSwipeCode.GDTileRedSwipeObjects2[k] = gdjs.MatchSwipeCode.GDTileRedSwipeObjects2[i];
+        ++k;
+    }
+}
+gdjs.MatchSwipeCode.GDTileRedSwipeObjects2.length = k;}}
 if (gdjs.MatchSwipeCode.condition1IsTrue_0.val) {
-{runtimeScene.getGame().getVariables().getFromIndex(20).sub(1);
+/* Reuse gdjs.MatchSwipeCode.GDTileRedObjects2 */
+/* Reuse gdjs.MatchSwipeCode.GDTileRedSwipeObjects2 */
+{runtimeScene.getGame().getVariables().getFromIndex(21).add(Math.round((((( gdjs.MatchSwipeCode.GDTileRedSwipeObjects2.length === 0 ) ? 0 :gdjs.MatchSwipeCode.GDTileRedSwipeObjects2[0].getPointX("")) - (( gdjs.MatchSwipeCode.GDTileRedObjects2.length === 0 ) ? 0 :gdjs.MatchSwipeCode.GDTileRedObjects2[0].getPointX(""))) / gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(28)))));
+}{for(var i = 0, len = gdjs.MatchSwipeCode.GDTileRedSwipeObjects2.length ;i < len;++i) {
+    gdjs.MatchSwipeCode.GDTileRedSwipeObjects2[i].setX((( gdjs.MatchSwipeCode.GDTileRedObjects2.length === 0 ) ? 0 :gdjs.MatchSwipeCode.GDTileRedObjects2[0].getPointX("")));
+}
 }}
 
 }
@@ -1251,16 +1259,10 @@ if (gdjs.MatchSwipeCode.condition1IsTrue_0.val) {
 {
 
 
-gdjs.MatchSwipeCode.condition0IsTrue_0.val = false;
-gdjs.MatchSwipeCode.condition1IsTrue_0.val = false;
 {
-gdjs.MatchSwipeCode.condition0IsTrue_0.val = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(20)) >= 1;
-}if ( gdjs.MatchSwipeCode.condition0IsTrue_0.val ) {
-{
-gdjs.MatchSwipeCode.condition1IsTrue_0.val = gdjs.evtTools.input.isMouseButtonReleased(runtimeScene, "Left");
-}}
-if (gdjs.MatchSwipeCode.condition1IsTrue_0.val) {
-{runtimeScene.getGame().getVariables().getFromIndex(20).sub(5);
+gdjs.copyArray(runtimeScene.getObjects("TileRed"), gdjs.MatchSwipeCode.GDTileRedObjects2);
+gdjs.copyArray(runtimeScene.getObjects("TileRedSwipe"), gdjs.MatchSwipeCode.GDTileRedSwipeObjects2);
+{runtimeScene.getGame().getVariables().getFromIndex(20).setNumber(Math.round((((( gdjs.MatchSwipeCode.GDTileRedSwipeObjects2.length === 0 ) ? 0 :gdjs.MatchSwipeCode.GDTileRedSwipeObjects2[0].getPointX("")) - (( gdjs.MatchSwipeCode.GDTileRedObjects2.length === 0 ) ? 0 :gdjs.MatchSwipeCode.GDTileRedObjects2[0].getPointX(""))) / gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(28)))) + gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(21)));
 }}
 
 }
@@ -1296,6 +1298,32 @@ gdjs.MatchSwipeCode.condition0IsTrue_0.val = gdjs.evtTools.variable.getVariableN
 
 
 gdjs.MatchSwipeCode.condition0IsTrue_0.val = false;
+{
+gdjs.MatchSwipeCode.condition0IsTrue_0.val = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(21)) < 0;
+}if (gdjs.MatchSwipeCode.condition0IsTrue_0.val) {
+{runtimeScene.getGame().getVariables().getFromIndex(21).setNumber(0);
+}}
+
+}
+
+
+{
+
+
+gdjs.MatchSwipeCode.condition0IsTrue_0.val = false;
+{
+gdjs.MatchSwipeCode.condition0IsTrue_0.val = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(21)) > 36;
+}if (gdjs.MatchSwipeCode.condition0IsTrue_0.val) {
+{runtimeScene.getGame().getVariables().getFromIndex(21).setNumber(36);
+}}
+
+}
+
+
+{
+
+
+gdjs.MatchSwipeCode.condition0IsTrue_0.val = false;
 gdjs.MatchSwipeCode.condition1IsTrue_0.val = false;
 {
 gdjs.MatchSwipeCode.condition0IsTrue_0.val = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(20)) <= 36;
@@ -1318,8 +1346,9 @@ gdjs.copyArray(runtimeScene.getObjects("TR"), gdjs.MatchSwipeCode.GDTRObjects2);
 
 {
 gdjs.copyArray(runtimeScene.getObjects("TR"), gdjs.MatchSwipeCode.GDTRObjects1);
+gdjs.copyArray(runtimeScene.getObjects("TileRed"), gdjs.MatchSwipeCode.GDTileRedObjects1);
 {for(var i = 0, len = gdjs.MatchSwipeCode.GDTRObjects1.length ;i < len;++i) {
-    gdjs.MatchSwipeCode.GDTRObjects1[i].setX(192 - ((gdjs.MatchSwipeCode.GDTRObjects1[i].getWidth()) / 2));
+    gdjs.MatchSwipeCode.GDTRObjects1[i].setX(((( gdjs.MatchSwipeCode.GDTileRedObjects1.length === 0 ) ? 0 :gdjs.MatchSwipeCode.GDTileRedObjects1[0].getPointX("")) + (( gdjs.MatchSwipeCode.GDTileRedObjects1.length === 0 ) ? 0 :gdjs.MatchSwipeCode.GDTileRedObjects1[0].getWidth()) / 2) - ((gdjs.MatchSwipeCode.GDTRObjects1[i].getWidth()) / 2));
 }
 }}
 
@@ -1332,15 +1361,11 @@ gdjs.copyArray(runtimeScene.getObjects("TR"), gdjs.MatchSwipeCode.GDTRObjects1);
 
 
 gdjs.MatchSwipeCode.condition0IsTrue_0.val = false;
-gdjs.MatchSwipeCode.condition1IsTrue_0.val = false;
 {
-gdjs.MatchSwipeCode.condition0IsTrue_0.val = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(23)) < 36;
-}if ( gdjs.MatchSwipeCode.condition0IsTrue_0.val ) {
-{
-gdjs.MatchSwipeCode.condition1IsTrue_0.val = gdjs.evtTools.input.isMouseButtonReleased(runtimeScene, "Left");
-}}
-if (gdjs.MatchSwipeCode.condition1IsTrue_0.val) {
-{runtimeScene.getGame().getVariables().getFromIndex(23).add(1);
+gdjs.MatchSwipeCode.condition0IsTrue_0.val = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(23)) != gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(25));
+}if (gdjs.MatchSwipeCode.condition0IsTrue_0.val) {
+{gdjs.deviceVibration.startVibration(5);
+}{gdjs.evtTools.sound.playSound(runtimeScene, "Click.mp3", false, 10, 1);
 }}
 
 }
@@ -1349,16 +1374,8 @@ if (gdjs.MatchSwipeCode.condition1IsTrue_0.val) {
 {
 
 
-gdjs.MatchSwipeCode.condition0IsTrue_0.val = false;
-gdjs.MatchSwipeCode.condition1IsTrue_0.val = false;
 {
-gdjs.MatchSwipeCode.condition0IsTrue_0.val = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(23)) <= 35;
-}if ( gdjs.MatchSwipeCode.condition0IsTrue_0.val ) {
-{
-gdjs.MatchSwipeCode.condition1IsTrue_0.val = gdjs.evtTools.input.isMouseButtonReleased(runtimeScene, "Left");
-}}
-if (gdjs.MatchSwipeCode.condition1IsTrue_0.val) {
-{runtimeScene.getGame().getVariables().getFromIndex(23).add(5);
+{runtimeScene.getGame().getVariables().getFromIndex(25).setNumber(gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(23)));
 }}
 
 }
@@ -1367,16 +1384,43 @@ if (gdjs.MatchSwipeCode.condition1IsTrue_0.val) {
 {
 
 
+{
+gdjs.copyArray(runtimeScene.getObjects("TileBlue"), gdjs.MatchSwipeCode.GDTileBlueObjects2);
+gdjs.copyArray(runtimeScene.getObjects("TileBlueSwipe"), gdjs.MatchSwipeCode.GDTileBlueSwipeObjects2);
+{for(var i = 0, len = gdjs.MatchSwipeCode.GDTileBlueSwipeObjects2.length ;i < len;++i) {
+    gdjs.MatchSwipeCode.GDTileBlueSwipeObjects2[i].setY((( gdjs.MatchSwipeCode.GDTileBlueObjects2.length === 0 ) ? 0 :gdjs.MatchSwipeCode.GDTileBlueObjects2[0].getCenterYInScene()) - (0.5 * (gdjs.MatchSwipeCode.GDTileBlueSwipeObjects2[i].getHeight())));
+}
+}}
+
+}
+
+
+{
+
+gdjs.copyArray(runtimeScene.getObjects("TileBlue"), gdjs.MatchSwipeCode.GDTileBlueObjects2);
+gdjs.copyArray(runtimeScene.getObjects("TileBlueSwipe"), gdjs.MatchSwipeCode.GDTileBlueSwipeObjects2);
+
 gdjs.MatchSwipeCode.condition0IsTrue_0.val = false;
 gdjs.MatchSwipeCode.condition1IsTrue_0.val = false;
 {
-gdjs.MatchSwipeCode.condition0IsTrue_0.val = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(23)) > 0;
+gdjs.MatchSwipeCode.condition0IsTrue_0.val = gdjs.evtTools.input.isMouseButtonReleased(runtimeScene, "Left");
 }if ( gdjs.MatchSwipeCode.condition0IsTrue_0.val ) {
 {
-gdjs.MatchSwipeCode.condition1IsTrue_0.val = gdjs.evtTools.input.isMouseButtonReleased(runtimeScene, "Left");
-}}
+for(var i = 0, k = 0, l = gdjs.MatchSwipeCode.GDTileBlueSwipeObjects2.length;i<l;++i) {
+    if ( gdjs.MatchSwipeCode.GDTileBlueSwipeObjects2[i].getX() != (( gdjs.MatchSwipeCode.GDTileBlueObjects2.length === 0 ) ? 0 :gdjs.MatchSwipeCode.GDTileBlueObjects2[0].getPointX("")) ) {
+        gdjs.MatchSwipeCode.condition1IsTrue_0.val = true;
+        gdjs.MatchSwipeCode.GDTileBlueSwipeObjects2[k] = gdjs.MatchSwipeCode.GDTileBlueSwipeObjects2[i];
+        ++k;
+    }
+}
+gdjs.MatchSwipeCode.GDTileBlueSwipeObjects2.length = k;}}
 if (gdjs.MatchSwipeCode.condition1IsTrue_0.val) {
-{runtimeScene.getGame().getVariables().getFromIndex(23).sub(1);
+/* Reuse gdjs.MatchSwipeCode.GDTileBlueObjects2 */
+/* Reuse gdjs.MatchSwipeCode.GDTileBlueSwipeObjects2 */
+{runtimeScene.getGame().getVariables().getFromIndex(24).add(Math.round((((( gdjs.MatchSwipeCode.GDTileBlueSwipeObjects2.length === 0 ) ? 0 :gdjs.MatchSwipeCode.GDTileBlueSwipeObjects2[0].getPointX("")) - (( gdjs.MatchSwipeCode.GDTileBlueObjects2.length === 0 ) ? 0 :gdjs.MatchSwipeCode.GDTileBlueObjects2[0].getPointX(""))) / gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(28)))));
+}{for(var i = 0, len = gdjs.MatchSwipeCode.GDTileBlueSwipeObjects2.length ;i < len;++i) {
+    gdjs.MatchSwipeCode.GDTileBlueSwipeObjects2[i].setX((( gdjs.MatchSwipeCode.GDTileBlueObjects2.length === 0 ) ? 0 :gdjs.MatchSwipeCode.GDTileBlueObjects2[0].getPointX("")));
+}
 }}
 
 }
@@ -1385,16 +1429,10 @@ if (gdjs.MatchSwipeCode.condition1IsTrue_0.val) {
 {
 
 
-gdjs.MatchSwipeCode.condition0IsTrue_0.val = false;
-gdjs.MatchSwipeCode.condition1IsTrue_0.val = false;
 {
-gdjs.MatchSwipeCode.condition0IsTrue_0.val = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(23)) >= 1;
-}if ( gdjs.MatchSwipeCode.condition0IsTrue_0.val ) {
-{
-gdjs.MatchSwipeCode.condition1IsTrue_0.val = gdjs.evtTools.input.isMouseButtonReleased(runtimeScene, "Left");
-}}
-if (gdjs.MatchSwipeCode.condition1IsTrue_0.val) {
-{runtimeScene.getGame().getVariables().getFromIndex(23).sub(5);
+gdjs.copyArray(runtimeScene.getObjects("TileBlue"), gdjs.MatchSwipeCode.GDTileBlueObjects2);
+gdjs.copyArray(runtimeScene.getObjects("TileBlueSwipe"), gdjs.MatchSwipeCode.GDTileBlueSwipeObjects2);
+{runtimeScene.getGame().getVariables().getFromIndex(23).setNumber(Math.round((((( gdjs.MatchSwipeCode.GDTileBlueSwipeObjects2.length === 0 ) ? 0 :gdjs.MatchSwipeCode.GDTileBlueSwipeObjects2[0].getPointX("")) - (( gdjs.MatchSwipeCode.GDTileBlueObjects2.length === 0 ) ? 0 :gdjs.MatchSwipeCode.GDTileBlueObjects2[0].getPointX(""))) / gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(28)))) + gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(24)));
 }}
 
 }
@@ -1430,6 +1468,32 @@ gdjs.MatchSwipeCode.condition0IsTrue_0.val = gdjs.evtTools.variable.getVariableN
 
 
 gdjs.MatchSwipeCode.condition0IsTrue_0.val = false;
+{
+gdjs.MatchSwipeCode.condition0IsTrue_0.val = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(24)) < 0;
+}if (gdjs.MatchSwipeCode.condition0IsTrue_0.val) {
+{runtimeScene.getGame().getVariables().getFromIndex(24).setNumber(0);
+}}
+
+}
+
+
+{
+
+
+gdjs.MatchSwipeCode.condition0IsTrue_0.val = false;
+{
+gdjs.MatchSwipeCode.condition0IsTrue_0.val = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(24)) > 36;
+}if (gdjs.MatchSwipeCode.condition0IsTrue_0.val) {
+{runtimeScene.getGame().getVariables().getFromIndex(24).setNumber(36);
+}}
+
+}
+
+
+{
+
+
+gdjs.MatchSwipeCode.condition0IsTrue_0.val = false;
 gdjs.MatchSwipeCode.condition1IsTrue_0.val = false;
 {
 gdjs.MatchSwipeCode.condition0IsTrue_0.val = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(23)) >= 0;
@@ -1452,8 +1516,9 @@ gdjs.copyArray(runtimeScene.getObjects("TB"), gdjs.MatchSwipeCode.GDTBObjects2);
 
 {
 gdjs.copyArray(runtimeScene.getObjects("TB"), gdjs.MatchSwipeCode.GDTBObjects1);
+gdjs.copyArray(runtimeScene.getObjects("TileBlue"), gdjs.MatchSwipeCode.GDTileBlueObjects1);
 {for(var i = 0, len = gdjs.MatchSwipeCode.GDTBObjects1.length ;i < len;++i) {
-    gdjs.MatchSwipeCode.GDTBObjects1[i].setX(576 - ((gdjs.MatchSwipeCode.GDTBObjects1[i].getWidth()) / 2));
+    gdjs.MatchSwipeCode.GDTBObjects1[i].setX(((( gdjs.MatchSwipeCode.GDTileBlueObjects1.length === 0 ) ? 0 :gdjs.MatchSwipeCode.GDTileBlueObjects1[0].getPointX("")) + (( gdjs.MatchSwipeCode.GDTileBlueObjects1.length === 0 ) ? 0 :gdjs.MatchSwipeCode.GDTileBlueObjects1[0].getWidth()) / 2) - ((gdjs.MatchSwipeCode.GDTBObjects1[i].getWidth()) / 2));
 }
 }}
 
@@ -1480,7 +1545,8 @@ if (gdjs.MatchSwipeCode.condition1IsTrue_0.val) {
 {for(var i = 0, len = gdjs.MatchSwipeCode.GDAutonSelectorObjects2.length ;i < len;++i) {
     gdjs.MatchSwipeCode.GDAutonSelectorObjects2[i].setAnimation(gdjs.MatchSwipeCode.GDAutonSelectorObjects2[i].getAnimation() + (1));
 }
-}{gdjs.deviceVibration.startVibration(15);
+}{gdjs.deviceVibration.startVibration(10);
+}{gdjs.evtTools.sound.playSound(runtimeScene, "Click.mp3", false, 10, 1);
 }}
 
 }
@@ -1599,6 +1665,7 @@ if (gdjs.MatchSwipeCode.condition1IsTrue_0.val) {
 }{runtimeScene.getGame().getVariables().getFromIndex(20).setNumber(0);
 }{runtimeScene.getGame().getVariables().getFromIndex(23).setNumber(0);
 }{gdjs.deviceVibration.startVibration(10);
+}{gdjs.evtTools.sound.playSound(runtimeScene, "Click.mp3", false, 10, 1);
 }}
 
 }
@@ -1619,6 +1686,7 @@ gdjs.MatchSwipeCode.condition1IsTrue_0.val = gdjs.evtTools.input.isMouseButtonRe
 if (gdjs.MatchSwipeCode.condition1IsTrue_0.val) {
 {gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "Skills", false);
 }{gdjs.deviceVibration.startVibration(10);
+}{gdjs.evtTools.sound.playSound(runtimeScene, "Click.mp3", false, 10, 1);
 }}
 
 }

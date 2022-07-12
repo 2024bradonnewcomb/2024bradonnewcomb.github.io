@@ -36,6 +36,7 @@ gdjs.StartScreenCode.condition1IsTrue_0.val = gdjs.evtTools.input.isMouseButtonR
 if (gdjs.StartScreenCode.condition1IsTrue_0.val) {
 {gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "MatchSwipe", false);
 }{gdjs.deviceVibration.startVibration(10);
+}{gdjs.evtTools.sound.playSound(runtimeScene, "Click.mp3", false, 10, 1);
 }}
 
 }
@@ -59,6 +60,7 @@ gdjs.StartScreenCode.condition1IsTrue_0.val = gdjs.evtTools.input.isMouseButtonR
 if (gdjs.StartScreenCode.condition1IsTrue_0.val) {
 {gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "Skills", false);
 }{gdjs.deviceVibration.startVibration(10);
+}{gdjs.evtTools.sound.playSound(runtimeScene, "Click.mp3", false, 10, 1);
 }}
 
 }
