@@ -1,4 +1,6 @@
 gdjs.StartScreenCode = {};
+gdjs.StartScreenCode.GDSettingsObjects1= [];
+gdjs.StartScreenCode.GDSettingsObjects2= [];
 gdjs.StartScreenCode.GDX3VObjects1= [];
 gdjs.StartScreenCode.GDX3VObjects2= [];
 gdjs.StartScreenCode.GDSubtitleObjects1= [];
@@ -87,6 +89,8 @@ gdjs.StartScreenCode.eventsList1(runtimeScene);
 gdjs.StartScreenCode.func = function(runtimeScene) {
 runtimeScene.getOnceTriggers().startNewFrame();
 
+gdjs.StartScreenCode.GDSettingsObjects1.length = 0;
+gdjs.StartScreenCode.GDSettingsObjects2.length = 0;
 gdjs.StartScreenCode.GDX3VObjects1.length = 0;
 gdjs.StartScreenCode.GDX3VObjects2.length = 0;
 gdjs.StartScreenCode.GDSubtitleObjects1.length = 0;

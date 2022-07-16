@@ -1,4 +1,7 @@
 gdjs.MatchCode = {};
+gdjs.MatchCode.GDSettingsObjects1= [];
+gdjs.MatchCode.GDSettingsObjects2= [];
+gdjs.MatchCode.GDSettingsObjects3= [];
 gdjs.MatchCode.GDMatchObjects1= [];
 gdjs.MatchCode.GDMatchObjects2= [];
 gdjs.MatchCode.GDMatchObjects3= [];
@@ -1643,6 +1646,9 @@ if (gdjs.MatchCode.condition1IsTrue_0.val) {
 gdjs.MatchCode.func = function(runtimeScene) {
 runtimeScene.getOnceTriggers().startNewFrame();
 
+gdjs.MatchCode.GDSettingsObjects1.length = 0;
+gdjs.MatchCode.GDSettingsObjects2.length = 0;
+gdjs.MatchCode.GDSettingsObjects3.length = 0;
 gdjs.MatchCode.GDMatchObjects1.length = 0;
 gdjs.MatchCode.GDMatchObjects2.length = 0;
 gdjs.MatchCode.GDMatchObjects3.length = 0;

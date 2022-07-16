@@ -1,4 +1,7 @@
 gdjs.SkillsCode = {};
+gdjs.SkillsCode.GDSettingsObjects1= [];
+gdjs.SkillsCode.GDSettingsObjects2= [];
+gdjs.SkillsCode.GDSettingsObjects3= [];
 gdjs.SkillsCode.GDSkillsScoreTxtObjects1= [];
 gdjs.SkillsCode.GDSkillsScoreTxtObjects2= [];
 gdjs.SkillsCode.GDSkillsScoreTxtObjects3= [];
@@ -77,7 +80,7 @@ gdjs.SkillsCode.eventsList0 = function(runtimeScene) {
 {
 gdjs.copyArray(runtimeScene.getObjects("SkillsScoreTxt"), gdjs.SkillsCode.GDSkillsScoreTxtObjects2);
 {for(var i = 0, len = gdjs.SkillsCode.GDSkillsScoreTxtObjects2.length ;i < len;++i) {
-    gdjs.SkillsCode.GDSkillsScoreTxtObjects2[i].setString(gdjs.evtTools.common.toString(gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(30)) * 5 + gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(33)) * 1 + gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(36)) * 10 + gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(39))));
+    gdjs.SkillsCode.GDSkillsScoreTxtObjects2[i].setString(gdjs.evtTools.common.toString(gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(30)) * 5 + gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(33)) * 1 + gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(36)) * 10 + gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(39)) * 3));
 }
 }}
 
@@ -490,7 +493,7 @@ gdjs.SkillsCode.condition0IsTrue_0.val = gdjs.evtTools.input.isMouseButtonReleas
 }if ( gdjs.SkillsCode.condition0IsTrue_0.val ) {
 {
 for(var i = 0, k = 0, l = gdjs.SkillsCode.GDRollerSwipeObjects2.length;i<l;++i) {
-    if ( gdjs.SkillsCode.GDRollerSwipeObjects2[i].getX() != (( gdjs.SkillsCode.GDRollerObjects2.length === 0 ) ? 0 :gdjs.SkillsCode.GDRollerObjects2[0].getPointX("")) + (gdjs.SkillsCode.GDRollerSwipeObjects2[i].getWidth()) / 2 ) {
+    if ( gdjs.SkillsCode.GDRollerSwipeObjects2[i].getX() != (( gdjs.SkillsCode.GDRollerObjects2.length === 0 ) ? 0 :gdjs.SkillsCode.GDRollerObjects2[0].getCenterXInScene()) + (gdjs.SkillsCode.GDRollerSwipeObjects2[i].getWidth()) / 2 ) {
         gdjs.SkillsCode.condition1IsTrue_0.val = true;
         gdjs.SkillsCode.GDRollerSwipeObjects2[k] = gdjs.SkillsCode.GDRollerSwipeObjects2[i];
         ++k;
@@ -500,9 +503,9 @@ gdjs.SkillsCode.GDRollerSwipeObjects2.length = k;}}
 if (gdjs.SkillsCode.condition1IsTrue_0.val) {
 /* Reuse gdjs.SkillsCode.GDRollerObjects2 */
 /* Reuse gdjs.SkillsCode.GDRollerSwipeObjects2 */
-{runtimeScene.getGame().getVariables().getFromIndex(37).add(Math.round((((( gdjs.SkillsCode.GDRollerSwipeObjects2.length === 0 ) ? 0 :gdjs.SkillsCode.GDRollerSwipeObjects2[0].getPointX("")) - (( gdjs.SkillsCode.GDRollerObjects2.length === 0 ) ? 0 :gdjs.SkillsCode.GDRollerObjects2[0].getPointX(""))) / gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(27)))));
+{runtimeScene.getGame().getVariables().getFromIndex(37).add(Math.round((((( gdjs.SkillsCode.GDRollerSwipeObjects2.length === 0 ) ? 0 :gdjs.SkillsCode.GDRollerSwipeObjects2[0].getCenterXInScene()) - (( gdjs.SkillsCode.GDRollerObjects2.length === 0 ) ? 0 :gdjs.SkillsCode.GDRollerObjects2[0].getCenterXInScene())) / gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(27)))));
 }{for(var i = 0, len = gdjs.SkillsCode.GDRollerSwipeObjects2.length ;i < len;++i) {
-    gdjs.SkillsCode.GDRollerSwipeObjects2[i].setX((( gdjs.SkillsCode.GDRollerObjects2.length === 0 ) ? 0 :gdjs.SkillsCode.GDRollerObjects2[0].getCenterXInScene()) - (0.5 * (( gdjs.SkillsCode.GDRollerObjects2.length === 0 ) ? 0 :gdjs.SkillsCode.GDRollerObjects2[0].getWidth())));
+    gdjs.SkillsCode.GDRollerSwipeObjects2[i].setX((( gdjs.SkillsCode.GDRollerObjects2.length === 0 ) ? 0 :gdjs.SkillsCode.GDRollerObjects2[0].getCenterXInScene()) - (0.5 * (gdjs.SkillsCode.GDRollerSwipeObjects2[i].getWidth())));
 }
 }}
 
@@ -515,7 +518,7 @@ if (gdjs.SkillsCode.condition1IsTrue_0.val) {
 {
 gdjs.copyArray(runtimeScene.getObjects("Roller"), gdjs.SkillsCode.GDRollerObjects2);
 gdjs.copyArray(runtimeScene.getObjects("RollerSwipe"), gdjs.SkillsCode.GDRollerSwipeObjects2);
-{runtimeScene.getGame().getVariables().getFromIndex(36).setNumber(Math.round((((( gdjs.SkillsCode.GDRollerSwipeObjects2.length === 0 ) ? 0 :gdjs.SkillsCode.GDRollerSwipeObjects2[0].getPointX("")) - (( gdjs.SkillsCode.GDRollerObjects2.length === 0 ) ? 0 :gdjs.SkillsCode.GDRollerObjects2[0].getPointX(""))) / gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(27)))) + gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(37)));
+{runtimeScene.getGame().getVariables().getFromIndex(36).setNumber(Math.round((((( gdjs.SkillsCode.GDRollerSwipeObjects2.length === 0 ) ? 0 :gdjs.SkillsCode.GDRollerSwipeObjects2[0].getCenterXInScene()) - (( gdjs.SkillsCode.GDRollerObjects2.length === 0 ) ? 0 :gdjs.SkillsCode.GDRollerObjects2[0].getCenterXInScene())) / gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(27)))) + gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(37)));
 }}
 
 }
@@ -670,9 +673,9 @@ gdjs.SkillsCode.GDTileSwipeObjects2.length = k;}}
 if (gdjs.SkillsCode.condition1IsTrue_0.val) {
 /* Reuse gdjs.SkillsCode.GDTileObjects2 */
 /* Reuse gdjs.SkillsCode.GDTileSwipeObjects2 */
-{runtimeScene.getGame().getVariables().getFromIndex(40).add(Math.round((((( gdjs.SkillsCode.GDTileSwipeObjects2.length === 0 ) ? 0 :gdjs.SkillsCode.GDTileSwipeObjects2[0].getPointX("")) - (( gdjs.SkillsCode.GDTileObjects2.length === 0 ) ? 0 :gdjs.SkillsCode.GDTileObjects2[0].getPointX(""))) / gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(27)))));
+{runtimeScene.getGame().getVariables().getFromIndex(40).add(Math.round((((( gdjs.SkillsCode.GDTileSwipeObjects2.length === 0 ) ? 0 :gdjs.SkillsCode.GDTileSwipeObjects2[0].getCenterXInScene()) - (( gdjs.SkillsCode.GDTileObjects2.length === 0 ) ? 0 :gdjs.SkillsCode.GDTileObjects2[0].getCenterXInScene())) / gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(27)))));
 }{for(var i = 0, len = gdjs.SkillsCode.GDTileSwipeObjects2.length ;i < len;++i) {
-    gdjs.SkillsCode.GDTileSwipeObjects2[i].setX((( gdjs.SkillsCode.GDTileObjects2.length === 0 ) ? 0 :gdjs.SkillsCode.GDTileObjects2[0].getCenterXInScene()) - (0.5 * (( gdjs.SkillsCode.GDTileObjects2.length === 0 ) ? 0 :gdjs.SkillsCode.GDTileObjects2[0].getWidth())));
+    gdjs.SkillsCode.GDTileSwipeObjects2[i].setX((( gdjs.SkillsCode.GDTileObjects2.length === 0 ) ? 0 :gdjs.SkillsCode.GDTileObjects2[0].getCenterXInScene()) - (0.5 * (gdjs.SkillsCode.GDTileSwipeObjects2[i].getWidth())));
 }
 }}
 
@@ -685,7 +688,7 @@ if (gdjs.SkillsCode.condition1IsTrue_0.val) {
 {
 gdjs.copyArray(runtimeScene.getObjects("Tile"), gdjs.SkillsCode.GDTileObjects2);
 gdjs.copyArray(runtimeScene.getObjects("TileSwipe"), gdjs.SkillsCode.GDTileSwipeObjects2);
-{runtimeScene.getGame().getVariables().getFromIndex(39).setNumber(Math.round((((( gdjs.SkillsCode.GDTileSwipeObjects2.length === 0 ) ? 0 :gdjs.SkillsCode.GDTileSwipeObjects2[0].getPointX("")) - (( gdjs.SkillsCode.GDTileObjects2.length === 0 ) ? 0 :gdjs.SkillsCode.GDTileObjects2[0].getPointX(""))) / gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(27)))) + gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(40)));
+{runtimeScene.getGame().getVariables().getFromIndex(39).setNumber(Math.round((((( gdjs.SkillsCode.GDTileSwipeObjects2.length === 0 ) ? 0 :gdjs.SkillsCode.GDTileSwipeObjects2[0].getCenterXInScene()) - (( gdjs.SkillsCode.GDTileObjects2.length === 0 ) ? 0 :gdjs.SkillsCode.GDTileObjects2[0].getCenterXInScene())) / gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(27)))) + gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(40)));
 }}
 
 }
@@ -709,9 +712,9 @@ gdjs.SkillsCode.condition0IsTrue_0.val = gdjs.evtTools.variable.getVariableNumbe
 
 gdjs.SkillsCode.condition0IsTrue_0.val = false;
 {
-gdjs.SkillsCode.condition0IsTrue_0.val = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(39)) > 36;
+gdjs.SkillsCode.condition0IsTrue_0.val = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(39)) > 28;
 }if (gdjs.SkillsCode.condition0IsTrue_0.val) {
-{runtimeScene.getGame().getVariables().getFromIndex(39).setNumber(36);
+{runtimeScene.getGame().getVariables().getFromIndex(39).setNumber(28);
 }}
 
 }
@@ -735,9 +738,9 @@ gdjs.SkillsCode.condition0IsTrue_0.val = gdjs.evtTools.variable.getVariableNumbe
 
 gdjs.SkillsCode.condition0IsTrue_0.val = false;
 {
-gdjs.SkillsCode.condition0IsTrue_0.val = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(40)) > 36;
+gdjs.SkillsCode.condition0IsTrue_0.val = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(40)) > 28;
 }if (gdjs.SkillsCode.condition0IsTrue_0.val) {
-{runtimeScene.getGame().getVariables().getFromIndex(40).setNumber(36);
+{runtimeScene.getGame().getVariables().getFromIndex(40).setNumber(28);
 }}
 
 }
@@ -825,14 +828,6 @@ gdjs.SkillsCode.condition1IsTrue_0.val = gdjs.evtTools.input.isMouseButtonReleas
 if (gdjs.SkillsCode.condition1IsTrue_0.val) {
 {gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "MatchSwipe", false);
 }{gdjs.deviceVibration.startVibration(10);
-}{runtimeScene.getGame().getVariables().getFromIndex(39).setNumber(0);
-}{runtimeScene.getGame().getVariables().getFromIndex(30).setNumber(0);
-}{runtimeScene.getGame().getVariables().getFromIndex(31).setNumber(0);
-}{runtimeScene.getGame().getVariables().getFromIndex(33).setNumber(0);
-}{runtimeScene.getGame().getVariables().getFromIndex(34).setNumber(0);
-}{runtimeScene.getGame().getVariables().getFromIndex(36).setNumber(0);
-}{runtimeScene.getGame().getVariables().getFromIndex(37).setNumber(0);
-}{runtimeScene.getGame().getVariables().getFromIndex(40).setNumber(0);
 }}
 
 }
@@ -904,6 +899,9 @@ gdjs.SkillsCode.eventsList5(runtimeScene);
 gdjs.SkillsCode.func = function(runtimeScene) {
 runtimeScene.getOnceTriggers().startNewFrame();
 
+gdjs.SkillsCode.GDSettingsObjects1.length = 0;
+gdjs.SkillsCode.GDSettingsObjects2.length = 0;
+gdjs.SkillsCode.GDSettingsObjects3.length = 0;
 gdjs.SkillsCode.GDSkillsScoreTxtObjects1.length = 0;
 gdjs.SkillsCode.GDSkillsScoreTxtObjects2.length = 0;
 gdjs.SkillsCode.GDSkillsScoreTxtObjects3.length = 0;
