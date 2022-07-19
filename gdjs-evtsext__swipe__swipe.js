@@ -308,7 +308,7 @@ gdjs.evtsExt__Swipe__Swipe.Swipe.prototype.doStepPreEventsContext.condition0IsTr
 }if ( gdjs.evtsExt__Swipe__Swipe.Swipe.prototype.doStepPreEventsContext.condition0IsTrue_0.val ) {
 {
 {gdjs.evtsExt__Swipe__Swipe.Swipe.prototype.doStepPreEventsContext.conditionTrue_1 = gdjs.evtsExt__Swipe__Swipe.Swipe.prototype.doStepPreEventsContext.condition1IsTrue_0;
-gdjs.evtsExt__Swipe__Swipe.Swipe.prototype.doStepPreEventsContext.conditionTrue_1.val = eventsFunctionContext.getOnceTriggers().triggerOnce(10414132);
+gdjs.evtsExt__Swipe__Swipe.Swipe.prototype.doStepPreEventsContext.conditionTrue_1.val = eventsFunctionContext.getOnceTriggers().triggerOnce(10750484);
 }
 }}
 if (gdjs.evtsExt__Swipe__Swipe.Swipe.prototype.doStepPreEventsContext.condition1IsTrue_0.val) {
